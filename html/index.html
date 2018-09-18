@@ -1,0 +1,604 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <style type="text/css">
+
+<!--
+  A:link {text-decoration: none}
+  A:visited {text-decoration: none}
+  A:active {text-decoration: none}
+
+.text   {
+        text-decoration: none;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        font-family: Verdana,Arial,Helvetica;
+        }
+P   {
+        text-decoration: none;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        font-family: Verdana,Arial,Helvetica;
+        }
+LI   {
+        text-decoration: none;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        font-family: Verdana,Arial,Helvetica;
+        }
+TD   {
+        text-decoration: none;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        font-family: Verdana,Arial,Helvetica;
+        }
+H3   {
+        text-decoration: none;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: bold;
+        font-family: Verdana,Arial,Helvetica;
+        }
+H2   {
+        text-decoration: none;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: bold;
+        font-family: Verdana,Arial,Helvetica;
+        }
+H1   {
+        text-decoration: none;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: bold;
+        font-family: Verdana,Arial,Helvetica;
+        }
+ --->
+
+  </style>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>PointSuite</title>
+    <meta content="Cathy Lawson" name="author">
+  </head>
+  <body>
+    <h1 style="text-align: center;"><big><big>PointSuite</big></big>
+      v.0.7<br>
+    </h1>
+    <table style="text-align: left; width: 100%;" border="1"
+      cellpadding="2" cellspacing="2">
+      <tbody>
+        <tr>
+          <td colspan="1" rowspan="4" style="vertical-align: top;"><img
+              alt="labelled icosahedron" src="icos_label.jpg"
+              style="width: 373px; height: 373px;"></td>
+          <td style="vertical-align: top;">PointSuite is a set of
+            programs to process macromolecular assemblies described by
+            point and helical symmetry operations, with the goals of
+            uniform annotation, archiving, and viewing.&nbsp; In order
+            to handle coordinates deposited in any orthogonal Cartesian
+            frame, the relationships between the deposition, standard
+            point and crystal frames are captured as frame
+            transformations.&nbsp; For example, the transformation
+            required to move icosahedral virus structures from deposited
+            position to the standard frame shown at left is calculated
+            and recorded.&nbsp; All point symmetries are fully handled;
+            helical entries are handled only for non-crystal cases. <br>
+            <br>
+            Written/compiled by C. Lawson, with thanks to V.J. Reddy
+            (TSRI) for sharing PDB2VIPER code (findframe);&nbsp; Tom
+            Goddard (UCSF) for Chimera scripts (runchimera.csh);
+            Huanwang Yang (RCSB PDB) for importmats and cif-handling
+            subroutines.<br>
+            <br>
+            Please look at this open access article that describes how
+            Pointsuite was used to remediate virus structures in the
+            PDB: Lawson CL, Dutta SD, Westbrook JD, Henrick K, Berman HM
+            (2008) &nbsp; <a
+              href="http://journals.iucr.org/d/issues/2008/08/00/mv5020/index.html">Representation
+of
+viruses
+in
+the
+remediated
+PDB
+
+              archive</a>, Acta Cryst D, 874-882.<br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">DOWNLOAD:&nbsp; <a
+              href="http://chem.rutgers.edu/%7Elawson/pointsuite0.7.tgz">pointsuite0.7.tgz</a>
+            (version date: January 15, 2013)<br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;"><span style="font-family:
+              verdana,arial,helvetica;">&nbsp;&nbsp; <a
+                href="virusproc-tutorial.html">Virus Processing Tutorial<br>
+              </a></span></td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;"><a href="#install">
+              Installation Instructions</a> &nbsp;&nbsp;&nbsp; <a
+              href="#Documentation">Documentation</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <p><a name="install"></a>INSTALL/COMPILE/CONFIGURE:<br>
+      Type the following commands in the directory where you want to
+      install the software.<br>
+    </p>
+    <span style="font-family: verdana,arial,helvetica;"><b>tar xvzf
+        pointsuite0.7.tgz</b><b><br>
+      </b><b> cd pointsuite0.7</b><b><br>
+      </b><b>make </b>(to compile)<br>
+      The package is composed of programs written in C along with
+      C-shell-based scripts.<br>
+      It has been extensively tested on linux and mac-intel osx
+      operating systems.<br>
+      <br>
+    </span> <span style="font-family: verdana,arial,helvetica;"><b>source
+
+        setup.csh</b>&nbsp;&nbsp; <br>
+      setup.csh script works for csh/tcsh shell. follow directions to
+      set up your environment more permanently.<br>
+      <br>
+    </span><span style="font-family: verdana,arial,helvetica;">To make
+      full use of the package, the graphics program <a
+        href="http://www.cgl.ucsf.edu/chimera/">UCSF Chimera</a> should
+      also be installed and in your path.<br>
+      <br>
+    </span><span style="font-family: verdana,arial,helvetica;">TEST:<br>
+      <b>cd demo</b><b><br>
+      </b><b>rundemo.csh 1RUG&nbsp; </b>(runs the 1RUG demo)<br>
+      <b>rundemo.csh all</b>&nbsp;&nbsp; (runs all of the demos)<br>
+      <br>
+      browse the demos to view functionality<br>
+      &nbsp; 1RUG: Generate archival cif for icosahedral virus crystal
+      structure.<br>
+      &nbsp; 1IFD:&nbsp;&nbsp; Generate archival cif for helical virus
+      fiber diffraction structure.<br>
+    </span><span style="font-family: verdana,arial,helvetica;">&nbsp;
+      1EI7:&nbsp;&nbsp; Generate archival cif for D17 symmetry particle.<br>
+    </span><span style="font-family: verdana,arial,helvetica;">&nbsp;
+      1CGM:&nbsp; Generate matrix representation for ~900 A length
+      helical TMV-like virus.<br>
+      &nbsp; 1M4X:&nbsp; Generate matrix representations for complex
+      virus particle sub-assemblies.<br>
+      &nbsp; IMPORT:&nbsp; </span><span style="font-family:
+      verdana,arial,helvetica;">Generate BIOMT, CIF from typical
+      author-uploaded example input files using importmats.</span><br>
+    <span style="font-family: Helvetica,Arial,sans-serif;">Additional
+      icosahedral virus examples: 2XD8 (EM), 2W0C, 2VF9, 3N7X
+      (X-ray).&nbsp; </span><br style="font-family:
+      Helvetica,Arial,sans-serif;">
+    <span style="font-family: Helvetica,Arial,sans-serif;">See </span><a
+      href="virusproc-tutorial.html" style="font-family:
+      Helvetica,Arial,sans-serif;">Virus processing tutorial</a><span
+      style="font-family: Helvetica,Arial,sans-serif;"> for more info.</span><br
+      style="font-family: Helvetica,Arial,sans-serif;">
+    <br>
+    <span style="font-family: verdana,arial,helvetica;"></span><span
+      style="font-family: verdana,arial,helvetica;"><br>
+      <br>
+      RELEASE INFO:<br>
+    </span><span style="font-family: verdana,arial,helvetica;">version
+      0.5.8 (12 June 2007) initial stable release</span><br>
+    <span style="font-family: verdana,arial,helvetica;"><br>
+      version 0.6 (20 June 2011) minor updates:<br>
+      *importmats (from H. Yang)&nbsp; handles additional matrix type
+      (xncsrel) from CNS ncs.def.<br>
+      *update of scripts automating image generation to work with v.1.4
+      Chimera and higher<br>
+      *when run without arguments, runpt.csh autoscript now prints brief
+      documentation<br>
+      *</span><span style="font-family: verdana,arial,helvetica;">new
+      virus processing tutorial</span><br>
+    <span style="font-family: verdana,arial,helvetica;">*additional
+      documentation now provided for utilities: importmats, autoscripts,
+      multiplymats<br>
+      *RCSBvirusimages.csh script to generate set of virus images for
+      web display.<br>
+      <br>
+      version 0.7 (15 January 2013):<br>
+      *improved cif parsing subroutines added by H. Yang (cifparse.c).<br>
+      *file input reading improvements in importmats, findframe,
+      makeassembly<br>
+      *findframe single input file with matrices and coordinates can now
+      be either PDB or CIF; optional 2nd file in BIOMT format (overrides 1st file matrices)<br>
+      *new program cif2pdb creates simple pdb file (matrices, cryst1
+      record, coordinates) from cif (H. Yang).<br>
+      *simplified scripts, PDB-dependency removed for runpt.csh<br>
+      *RCSBvirusimages.csh script handles split entry cases
+      (modifications by Ezra Peisach)<br>
+      <br>
+    </span>
+    <hr style="width: 100%; height: 2px;"><a name="Documentation"></a><span
+      style="font-family: verdana,arial,helvetica;">PROGRAM
+      DOCUMENTATION:<br>
+    </span>
+    <ul id="mozToc">
+      <!--mozToc h2 1 h3 2 h4 3 h5 4 h6 5 h6 6-->
+      <li><a href="#mozTocId650023">FINDFRAME</a>
+        <ul>
+          <li><a href="#mozTocId237557">Description</a></li>
+          <li><a href="#mozTocId981060">Use</a></li>
+          <li><a href="#mozTocId45430">Algorithm </a></li>
+          <li><a href="#mozTocId229292">Output</a></li>
+        </ul>
+      </li>
+      <li><a href="#mozTocId629505">POINTMATS</a>
+        <ul>
+          <li><a href="#mozTocId506963">Description</a></li>
+          <li><a href="#mozTocId615010">Use</a></li>
+          <li><a href="#mozTocId315225">Output</a></li>
+        </ul>
+      </li>
+      <li><a href="#mozTocId352913">MAKEASSEMBLY</a>
+        <ul>
+          <li><a href="#mozTocId671271">Description</a></li>
+          <li><a href="#mozTocId789206">Use</a></li>
+          <li><a href="#mozTocId100314">Algorithm </a></li>
+          <li><a href="#mozTocId615797">Output</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul id="mozToc">
+      <!--mozToc h2 1 h3 2 h4 3 h5 4 h6 5 h6 6-->
+      <li><a href="#utilities">Utilities</a>
+        <ul>
+          <li><a href="#importmats">importmats</a></li>
+          <li><a href="#autoscripts">autoscripts</a><br>
+          </li>
+          <li><a href="#frac2orth">frac2orth</a></li>
+          <li><a href="#movecoords">movecoords</a></li>
+          <li><a href="#multplymats">multiplymats</a><br>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <hr style="width: 100%; height: 2px;">
+    <h2><a class="mozTocH2" name="mozTocId650023"></a>PROGRAM FINDFRAME</h2>
+    <h3><a class="mozTocH3" name="mozTocId237557"></a>Description</h3>
+    <p class="MsoNormal"><br>
+      The program FINDFRAME calculates the transformation matrix that
+      moves the asymmetric unit of a particle with point symmetry in an
+      arbitrary (skew) frame into a defined position within a standard
+      point frame.<span style="">&nbsp; </span>The standard icosahedral
+      frame is defined as having the 5-fold axis of the first pentamer
+      centered on the vector (x=0,y=1, z=phi<span style="font-family:
+        Symbol;"><span style=""></span></span>), where phi <span
+        style="font-family: Symbol;"><span style=""></span></span>is the
+      golden ratio (sqrt(5)+1)/2.&nbsp; This convention is also employed
+      by the VIPER database and the is proposed convention of Belnap et.
+      al. for cryoEM maps. <br>
+    </p>
+    <p class="MsoNormal">FINDFRAME is an extension of the <a
+        href="http://viperdb.scripps.edu/pdb2viper.php">PDB2VIPER</a>
+      program from the VIPERdb (Shepherd, et al. (2006) Nucleic Acids
+      Res, 34, D386-389) that incorporates the qikfit least-squares
+      fitting routine from <span style=""><a
+          href="http://www.bioinf.org.uk/software/profit/index.html">Bioplib</a>
+        (A.C.R. Martin, personal communication). </span>Algorithm steps
+      have been added to increase the precision of the calculated
+      transformation matrix and to improve uniformity of coordinate
+      placement relative to the standard icosahedron symmetry axes (see
+      description below).<span style=""> &nbsp;</span> </p>
+    <p class="MsoNormal"><br>
+    </p>
+    <h3><a class="mozTocH3" name="mozTocId981060"></a>Use</h3>
+    <p class="MsoNormal">on the command line:<big><br>
+        <br>
+      </big><span style="font-family: courier new,courier,monospace;">&gt;findframe
+
+        infile.pdb/cif</span></p>
+    <p class="MsoNormal"><!--[if !supportEmptyParas]--><!--[endif]-->
+      The input file is expected to have all needed transformation
+      matrices to build the icosahedral or other point group particle
+      AND coordinates for the asymmetric unit .<span style="">&nbsp; </span>PDB
+
+      matrices can be given either as REMARK 350 BIOMT or MTRIX records;
+      in cif the matrices are given in _pdbx_struct_oper_list and must
+      have type of "general operation", "point symmetry operation" or
+      "helical symmetry operation".<span style="">&nbsp; </span>One of
+      the transformation matrices must be the identity element. Optional:
+      a second file can be provided with BIOMT records; in this case the
+      matrices in the 2nd file override any present in the first file.<br>
+      <br>
+    </p>
+    <h3><a class="mozTocH3" name="mozTocId45430"></a><small>Algorithm</small>
+    </h3>
+    <p class="MsoNormal">modifications to PDB2VIPER (from V.J. Reddy)
+      are in italics</p>
+    <ol style="margin-top: 0in;" start="1" type="1">
+      <li class="MsoNormal" style="">The approximate center of mass
+        ("reference atom") is calculated from Calpha and P atom
+        positions.</li>
+      <li class="MsoNormal" style="">The set of matrix translation
+        vectors are averaged to find the center of the particle relative
+        to the coordinate origin. The reference atom is translated by
+        the negated particle center and transformed into a unit vector.</li>
+      <li class="MsoNormal" style="">The rotation matrices are
+        decomposed into angle-axis form. The angle identifies the fold
+        of the rotation (e.g. 72 or 144 degrees for 5-fold, 120 degrees
+        for 3-fold). The axis vector defines the symmetry orientation.<span
+          style="">&nbsp; <br>
+        </span></li>
+      <li class="MsoNormal" style=""><span style="">The rotations are
+          checked against their corresponding translation vectors to
+          identify helical symmetry.&nbsp; If helical symmetry is
+          detected, then the program attempts to identify all of the
+          helical parameters from the matrices, and will print this info
+          to findframe.cif and will then exit (currently, program only
+          handles cases with helical axis on z).</span><span style=""><br>
+        </span></li>
+      <li class="MsoNormal" style="">If no helical operations are
+        detected, then point symmetry is assumed and the program
+        analyses the matrices to deduce the correct symmetry.&nbsp; The
+        remainder of the algorithm description explains what happens for
+        icosahedral symmetry, but essentially similar steps are taken
+        for the other symmetries (circular,dihedral, tetrahedral,
+        octahedral).<br>
+      </li>
+      <li class="MsoNormal" style="">The five-fold, two-fold, and
+        three-fold closest to the reference atom are identified. <br>
+      </li>
+      <li class="MsoNormal" style=""><i>The position of the reference
+          atom unit vector relative to the 5-3 and 5-2 planes is
+          evaluated.<span style="">&nbsp; </span>If the reference atom
+          is closer to the 5-3 plane, the icosahedral a.u. is classified
+          as "3-fold centric" and the closest 3-fold is selected for
+          alignment in the next step.<span style="">&nbsp; </span>If
+          the reference atom is closer to the 5-2 plane (typically true
+          for T=3 viruses), the icosahedral a.u. is classified as
+          "2-fold centric" and the 3-fold to the right of the 2-fold is
+          selected for alignment.<o:p></o:p></i></li>
+      <li class="MsoNormal" style="">The&nbsp; input structure's 5-fold
+        and 3-fold are aligned onto the standard icosahedral frame
+        5-fold (0, 1, phi<span style="font-family: Symbol;"><span
+            style=""></span></span>) and 3-fold (phi<span
+          style="font-family: Symbol;"><span style=""></span></span>/3,
+        0, (2*phi<span style="font-family: Symbol;"><span style=""></span></span>+1)/3)
+axes
+in
+two
+steps.&nbsp;
+First,
+the
+rotation
+that
+
+        superimposes the normal to the 5-3 plane of the deposited
+        structure onto the normal to the 5-3 plane of the standard
+        icosahedron 5-fold is found and applied.<span style="">&nbsp; </span>Second,
+        the rotation around the aligned normals that superimposes the
+        pair of 5-fold axes is found and applied.<span style="">&nbsp; </span>The
+        initial estimate for the findframe matrix is based on these two
+        rotation matrices and the translation vector determined in step
+        2.</li>
+      <li class="MsoNormal" style=""><i>Fitting/refinement: The
+          input-supplied transformations are applied to the reference
+          atom, and the resulting 60-atom constellation is transformed
+          to the icosahedral frame by the initial findframe matrix.<span
+            style="">&nbsp; </span>A reference set is generated by
+          applying icosahedral symmetry operations to the 1st<span
+            style="">&nbsp; </span>transformed atom.<span style="">&nbsp;
+          </span>The 60-atom constellation is fitted to the icosahedral
+          reference set, yielding a correction matrix.&nbsp; The final
+          findframe matrix is generated by applying the correction
+          matrix to the initial estimate.<span style="">&nbsp; </span>This
+          step is particularly helpful for cases where the input
+          file-supplied matrices have either low precision or small
+          random errors, as these errors tend to be averaged out.<o:p></o:p></i></li>
+    </ol>
+    <br>
+    <span style=""> </span>
+    <h3><a class="mozTocH3" name="mozTocId229292"></a>Output</h3>
+    <p class="MsoNormal">General info about the calculation is provided
+      in the standard output.&nbsp; On successful execution a cif file
+      with symmetry and frame transformation info is&nbsp; also output
+      called *findframe.cif*.&nbsp; <br>
+    </p>
+    <small><span style="font-family: verdana,arial,helvetica;"><br>
+      </span></small> <span style="font-family:
+      verdana,arial,helvetica;"><span style="font-weight: bold;"><br>
+      </span></span> <b><span style="font-size: 14pt; font-family:
+        Tahoma;"></span></b>
+    <hr style="width: 100%; height: 2px;">
+    <h2><a class="mozTocH2" name="mozTocId629505"></a>PROGRAM POINTMATS<br>
+    </h2>
+    <h3><a class="mozTocH3" name="mozTocId506963"></a>Description</h3>
+    <p class="MsoNormal">Generates sets of transformations corresponding
+      to point or helical symmetry provided in the input cif file (
+      _pdbx_point_symmetry, _pdbx_helical_symmetry).<span style="">&nbsp;&nbsp;
+
+      </span>If the input cif contains a "transform to point frame"
+      matrix with _pdbx_struct_oper_list.id labelled 'P' (or a
+      "transform to helical frame" matrix is given with
+      _pdbx_struct_oper_list.id labelled 'H'), the matrix set is
+      transformed such that it can be applied to coordinates away from
+      the standard frame, e.g., [P-inv][std mats][P].&nbsp; Use
+      pointmats to obtain simple matrix set output files for
+      point/helical symmetry operations; use makeassembly if you need
+      full assembly and asymmetric unit descriptions.<br>
+    </p>
+    <p class="MsoNormal"><br>
+    </p>
+    <h3><a class="mozTocH3" name="mozTocId615010"></a>Use</h3>
+    Commonly used after findframe, e.g.:<br>
+    <br>
+    pointmats findframe.cif<br>
+    <br>
+    will generate point or helical matrix set with standard order in the
+    same frame as the matrices analysed by findframe.<br>
+    <span style="font-family: &quot;Courier New&quot;;"></span>
+    <p class="MsoNormal"><span style="font-size: 10pt; font-family:
+        &quot;Courier New&quot;;"><o:p></o:p><br>
+        <o:p></o:p></span><!--[endif]--><o:p></o:p></p>
+    <h3><a class="mozTocH3" name="mozTocId315225"></a>Output</h3>
+    <p class="MsoNormal">General info about the calculation is provided
+      in the standard output; the matrices are written in CIF format to
+      pointmats.cif and in BIOMT format to pointmats.biomt.&nbsp; Point
+      symmetry operations follow a standard order.&nbsp; Helical
+      symmetry operations are given as a continuous run centered around
+      the identity element.<br>
+    </p>
+    <b><span style="font-size: 14pt; font-family: Tahoma;"></span></b>
+    <hr style="width: 100%; height: 2px;">
+    <h2><a class="mozTocH2" name="mozTocId352913"></a>PROGRAM
+      MAKEASSEMBLY<br>
+    </h2>
+    <h3><a class="mozTocH3" name="mozTocId671271"></a>Description</h3>
+    <p class="MsoNormal">The set of point symmetry operations
+      corresponding to a crystal asymmetric unit is identified, given
+      the following input: CIF file with unitcell, spacegroup, asym_id,
+      entity_id records ,&nbsp; cif with _pdbx_point _symmetry or
+      _pdbx_helical_symmetry and _pdbx_struct_oper_list with frame
+      transformations (P for "transform to point frame" ; H for
+      "transform to helical frame"; X0, X1, etc. for "transform to
+      crystal frame").&nbsp; The program will analyse the structure for
+      ncs only if at least one "transform to crystal frame" matrix is
+      given (X0) (this will frequently be the identity matrix). FROM
+      v.5.7 onward, makeassembly outputs asym_id lists instead of
+      author_asym id list.<br>
+    </p>
+    <h3><a class="mozTocH3" name="mozTocId789206"></a>Use</h3>
+    <p>Crystal frame transformations are optional (e.g., for EM
+      structures):<br>
+    </p>
+    <p style="font-family: courier new,courier,monospace;"
+      class="MsoNormal"><small>&gt;makeassembly uc_symtry_scale_.cif
+        symm_transforms.cif<br>
+      </small></p>
+    <h3><a class="mozTocH3" name="mozTocId100314"></a>Algorithm<br>
+    </h3>
+    <ol style="margin-top: 0in;" start="1" type="1">
+      <li class="MsoNormal" style="">For each independent particle
+        position n defined by Xn, the full standard set of matrices for
+        the point symmetry given in 2ptmat , **to be applied to
+        coordinates transformed by X0**,&nbsp; are calculated as
+        [Xn][2ptmat^-1][StdMats][2ptmat][X0^-1].</li>
+      <li class="MsoNormal" style="">The crystal symmetry matrices in
+        their fractional forms are transformed by the translation part
+        of [Xn^-1].<span style="">&nbsp;&nbsp; </span>This moves the
+        origin of the crystal lattice to the particle center.<span
+          style="">&nbsp;&nbsp; </span>Crystal symmetry operators
+        passing through the particle center are identified by lack of
+        fractional translation components (full unit translations are
+        reset to 0).</li>
+      <li class="MsoNormal" style="">Each crystal symmetry rotation
+        identified in step 2 is applied to each of the rotations
+        calculated in step 1.<span style="">&nbsp; </span>Symmetry-transformed
+
+        rotations that are identical to untransformed rotations with
+        lower index are eliminated from the list of ncs operations.</li>
+    </ol>
+    <h3><a class="mozTocH3" name="mozTocId615797"></a>Output</h3>
+    <p class="MsoNormal">General info about the calculation for each
+      independent particle is provided in the standard output; an
+      archival cif (assembly.cif) is generated, as well as biomt records
+      for the full assembly (assembly.biomt).&nbsp; For crystal
+      structures a bare-bones crystal frame pdb file is created that can
+      be input to sfcheck or packing programs (assembly_xframe.pdb), and
+      ncs records are generated (assembly.ncs).<br>
+    </p>
+    <hr style="width: 100%; height: 2px;">
+    <h2><a name="utilities"></a>Utilities</h2>
+    <hr style="width: 100%; height: 2px;">
+    <h3><a name="importmats"></a>importmats: <br>
+    </h3>
+    call with<br>
+    &gt;importmats matfile<br>
+    <br>
+    Reads in and automatically detects a wide variety of&nbsp; matrix
+    record formats including BIOMT, MTRIX, ncs.def.<br>
+    Outputs file with BIOMT records named "importmats.biomt" and file
+    with CIF _pdbx_struct_assembly_oper records named "importmats.cif"<br>
+    Use importmats to prepare author.biomt file for runpt.csh<br>
+    <hr style="width: 100%; height: 2px;">
+    <h3><a name="autoscripts"></a>autoscripts: <br>
+    </h3>
+    (1) make assembly cif records:<br>
+    runpt.csh (prints out instructions for preparing script arguments)<br>
+    runpt.csh entry.cif&nbsp; author-upload-matfile (noncrystal and most
+    crystal structures)<br>
+    runpt.csh entry.cif author-upload-matfile X0.mat (crystal out of
+    frame or multiple positions in crystal a.u.)<br>
+    (2) makes pictures of files generated by runpt.csh:<br>
+    runchimera.csh <br>
+    (3) makes pictures from PDB file ready for release:<br>
+    RCSBvirusimages.csh file1.pdb<br>
+    RCSBvirusimages-split.csh&nbsp; file1.pdb file2.pdb file3.pdb ...
+    (combined images for split entries)<br>
+    <hr style="width: 100%; height: 2px;">
+    <h3><a name="frac2orth"></a>frac2orth:&nbsp;&nbsp; </h3>
+    call with<br>
+    &gt;frac2orth<br>
+    <br>
+    Interactively requests 6 parameters of unit cell and a position in
+    fractional coordinates, outputs orthogonalization matrix,
+    fractionalization matrix, and corresponding Cartesian coordinates of
+    input position.&nbsp; Useful if the translation part of a skew
+    matrix is provided in fractional coordinates.<br>
+    <hr style="width: 100%; height: 2px;">
+    <h3><a name="movecoords"></a>movecoords:&nbsp; </h3>
+    call with<br>
+    &gt;movecoords file1.pdb file2.matrix<br>
+    <br>
+    reads in pdb file and 4x4 matrix file, writes out "new.pdb" file
+    that is identical to input file except with x,y,z coordinates
+    tranformed by the 4x4 matrix. <br>
+    <hr style="width: 100%; height: 2px;">
+    <h3><a name="multplymats"></a>multiplymats: <br>
+    </h3>
+    <p class="MsoNormal"><small>Performs complex matrix multiplications
+        given a list of matrices in cif format and a string defining the
+        desired multiplication.<br>
+        String can include numerical ranges and recursion.<br>
+        examples: <br>
+        "(1-2)(3,5,7-9)"&nbsp; creates the set of matrices 1*3, 1*5,
+        1*7, 1*8, 1*9, 2*3, 2*5, 2*7, 2*8, 2*9<br>
+        "(1)(2,(2)(2),(2)(2)(2))" creates the set of matrices 1*2,
+        1*2*2, 1*2*2*2<br>
+      </small></p>
+    <p class="MsoNormal"><small>call with<br>
+        &gt;multiplymats &lt;pointmats or assembly cif&gt; &lt;matrix
+        multiplication string in double quotes&gt;<br>
+      </small></p>
+    <p class="MsoNormal"><small>example (1m4x):<br>
+        multiplymats 1m4x.cif "(1-60)(61-88)"<br>
+        number of matrices read: 89<br>
+        Matrix multiplication expression to be parsed: (1-60)(61-88)<br>
+        <br>
+        result:<br>
+        <br>
+        1*61<br>
+        1*62<br>
+        1*63<br>
+        1*64<br>
+        1*65<br>
+        1*66<br>
+        1*67<br>
+        1*68<br>
+        1*69<br>
+        1*70<br>
+        1*71<br>
+        ...</small></p>
+    <p class="MsoNormal"><small>60*85<br>
+        60*86<br>
+        60*87<br>
+        60*88<br>
+        Writing 1680 matrices to *mult.cif*<br>
+        Writing 1680 matrices to *mult.biomt*<br>
+        <br>
+      </small></p>
+    <hr style="width: 100%; height: 2px;">
+    <p class="MsoNormal"><small>last modified 14 Jan 2013<br>
+        <a href="http://chem.rutgers.edu/%7Elawson">C. Lawson</a><br>
+      </small> </p>
+  </body>
+</html>
