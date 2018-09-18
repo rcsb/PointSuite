@@ -1,0 +1,35 @@
+loop_
+_pdbx_validate_torsion.id 
+_pdbx_validate_torsion.PDB_model_num 
+_pdbx_validate_torsion.auth_comp_id 
+_pdbx_validate_torsion.auth_asym_id 
+_pdbx_validate_torsion.auth_seq_id 
+_pdbx_validate_torsion.PDB_ins_code 
+_pdbx_validate_torsion.phi 
+_pdbx_validate_torsion.psi 
+1  1 PRO A 15  ? -27.69  119.78  
+2  1 ARG A 23  ? -126.05 -51.80  
+3  1 ASP A 24  ? 177.34  168.20  
+4  1 PRO A 39  ? -77.80  41.10   
+5  1 ALA A 95  ? -58.08  0.73    
+6  1 LYS A 117 ? -65.24  82.02   
+7  1 MET A 118 ? -35.92  -75.46  
+8  1 PRO B 15  ? -19.21  116.38  
+9  1 ARG B 23  ? -102.16 -60.17  
+10 1 ASP B 24  ? -173.77 -176.71 
+11 1 ASN B 54  ? -79.80  24.13   
+12 1 ARG B 83  ? 172.81  148.23  
+13 1 ALA B 95  ? -54.13  -7.43   
+14 1 LYS B 114 ? 173.03  131.57  
+15 1 LYS B 117 ? -66.62  86.80   
+16 1 PRO C 15  ? -19.39  123.57  
+17 1 ASP C 24  ? -170.75 -179.63 
+18 1 ALA C 95  ? -47.42  -19.18  
+19 1 LYS C 114 ? -36.62  149.26  
+20 1 ASP C 122 ? -57.14  2.59    
+21 1 THR C 123 ? -120.03 -54.72  
+# 
+_pdbx_entity_nonpoly.entity_id   2 
+_pdbx_entity_nonpoly.name        'CALCIUM ION' 
+_pdbx_entity_nonpoly.comp_id     CA 
+# 
