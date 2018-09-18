@@ -1,0 +1,13 @@
+#!/bin/csh -f
+
+gcc -lm importmats.c       -o ../bin/importmats
+gcc -lm multiplymats.c     -o ../bin/multiplymats
+
+gcc -lm findframe.c      -o ../bin/findframe
+gcc -lm pointmats.c      -o ../bin/pointmats
+gcc -lm makeassembly.c   -o ../bin/makeassembly
+
+gcc -lm fracorth.c      -o ../bin/frac2orth
+gcc -lm movecoords.c    -o ../bin/movecoords
+gcc -lm cif2pdb.c    -o ../bin/cif2pdb
+
