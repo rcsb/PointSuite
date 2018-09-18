@@ -1,0 +1,26 @@
+*** PointSuite demo directory ***
+
+each subdirectory has an annotated "auto" script to run the demo.
+
+IMPORT : Generate BIOMT/MTRIX/cif from a variety of input file formats using importmats
+
+annotation examples:
+1EI7 : simple  XRAY, D17 symmetry complex 
+2XD8 : simple  EM, icosahedral virus 
+2W0C : simple  XRAY, icosahedral virus: 1 particle/a.u. in frame
+1IFD : simple  FIBER, helical virus on Z
+SPLIT: simple  EM, split entry icosahedral virus (tests RCSBvirusimages.csh script)
+
+2VF9 : complex XRAY, 2 particles/a.u.
+1RUG : complex XRAY, 1/3 particle/a.u., NONCRYSTAL frame
+3N7X : complex XRAY, 1/2 particle/a.u., NONCRYSTAL frame
+
+
+building complex structures:
+1CGM : Generate full ~3000 A length helical TMV-like virus using matrix representation.
+1M4X : Generate matrix representations for full assembly and sub-assemblies of this complex virus.
+
+rundemo.csh demodir or rundemo.csh all --  runs all demos 
+cleandemo.csh demodir or cleandemo.csh all -- restores all demo directories (removes output files)
+
+`
