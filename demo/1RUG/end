@@ -1,0 +1,477 @@
+loop_
+_pdbx_database_remark.id 
+_pdbx_database_remark.text 
+285 
+;THE ENTRY PRESENTED HERE DOES NOT CONTAIN THE COMPLETE
+CRYSTAL ASYMMETRIC UNIT. IN ADDITION, THE COORDINATES
+ARE NOT PRESENTED IN THE STANDARD CRYSTAL FRAME.
+
+IN ORDER TO GENERATE THE FULL CRYSTAL AU, APPLY THE
+FOLLOWING TRANSFORMATION MATRIX OR MATRICES AND SELECTED
+BIOMT RECORDS TO THE COORDINATES, AS SHOWN BELOW.
+X0  1    0.996348   0.062176  -0.058524    0.17359
+X0  2   -0.058524   0.996348   0.062176    0.17359
+X0  3    0.062176  -0.058524   0.996348    0.17359
+CRYSTAL AU =
+(X0) * (BIOMT 1-5,11-15,21-25,36-40) * CHAINS 1,2,3,4 
+;
+700 
+;SHEET
+THERE IS A BIFURCATED SHEET IN EACH OF CHAINS *1*, *2*, AND
+*3*.  TO REPRESENT THIS FEATURE REDUNDANT SHEETS ARE
+DEFINED.  THUS SHEETS B11 AND B12 DIFFER ONLY IN STRAND 4,
+SHEETS B12 AND B22 DIFFER ONLY IN STRAND 4, AND SHEETS B13
+AND B23 DIFFER IN STRANDS 1 AND 4 (DOUBLY BIFURCATED).
+;
+# 
+loop_
+_pdbx_version.entry_id 
+_pdbx_version.revision_date 
+_pdbx_version.major_version 
+_pdbx_version.minor_version 
+_pdbx_version.revision_type 
+_pdbx_version.details 
+1RUG 2008-03-24 3 2    'Version format compliance' 'compliance with PDB format V.3.15'          
+1RUG 2011-07-13 4 0000 'Version format compliance' 'compliance with PDB Exchange Dictionary V4' 
+# 
+loop_
+_pdbx_unobs_or_zero_occ_residues.id 
+_pdbx_unobs_or_zero_occ_residues.polymer_flag 
+_pdbx_unobs_or_zero_occ_residues.occupancy_flag 
+_pdbx_unobs_or_zero_occ_residues.PDB_model_num 
+_pdbx_unobs_or_zero_occ_residues.auth_asym_id 
+_pdbx_unobs_or_zero_occ_residues.auth_comp_id 
+_pdbx_unobs_or_zero_occ_residues.auth_seq_id 
+_pdbx_unobs_or_zero_occ_residues.PDB_ins_code 
+1  Y 1 1 1 GLY 1  ? 
+2  Y 1 1 1 LEU 2  ? 
+3  Y 1 1 1 GLY 3  ? 
+4  Y 1 1 1 ASP 4  ? 
+5  Y 1 1 1 GLU 5  ? 
+6  Y 1 1 1 LEU 6  ? 
+7  Y 1 1 1 GLU 7  ? 
+8  Y 1 1 1 GLU 8  ? 
+9  Y 1 1 1 VAL 9  ? 
+10 Y 1 1 1 ILE 10 ? 
+11 Y 1 1 1 VAL 11 ? 
+12 Y 1 1 1 GLU 12 ? 
+13 Y 1 1 1 LYS 13 ? 
+14 Y 1 1 1 THR 14 ? 
+15 Y 1 1 1 LYS 15 ? 
+16 Y 1 1 1 GLN 16 ? 
+17 Y 1 1 2 SER 1  ? 
+18 Y 1 1 2 PRO 2  ? 
+19 Y 1 1 2 ASN 3  ? 
+20 Y 1 1 2 VAL 4  ? 
+21 Y 1 1 2 GLU 5  ? 
+22 Y 1 1 2 ALA 6  ? 
+23 Y 1 1 2 CYS 7  ? 
+24 Y 1 1 4 GLY 1  ? 
+25 Y 1 1 4 ALA 2  ? 
+26 Y 1 1 4 GLN 3  ? 
+27 Y 1 1 4 VAL 4  ? 
+28 Y 1 1 4 SER 5  ? 
+29 Y 1 1 4 THR 6  ? 
+30 Y 1 1 4 GLN 7  ? 
+31 Y 1 1 4 LYS 8  ? 
+32 Y 1 1 4 SER 9  ? 
+33 Y 1 1 4 GLY 10 ? 
+34 Y 1 1 4 SER 11 ? 
+35 Y 1 1 4 HIS 12 ? 
+36 Y 1 1 4 GLU 13 ? 
+37 Y 1 1 4 ASN 14 ? 
+38 Y 1 1 4 GLN 15 ? 
+39 Y 1 1 4 ASN 16 ? 
+40 Y 1 1 4 ILE 17 ? 
+41 Y 1 1 4 LEU 18 ? 
+42 Y 1 1 4 THR 19 ? 
+43 Y 1 1 4 ASN 20 ? 
+44 Y 1 1 4 GLY 21 ? 
+45 Y 1 1 4 SER 22 ? 
+46 Y 1 1 4 ASN 23 ? 
+47 Y 1 1 4 GLN 24 ? 
+48 Y 1 1 4 THR 25 ? 
+49 Y 1 1 4 PHE 26 ? 
+50 Y 1 1 4 THR 27 ? 
+51 Y 1 1 4 VAL 28 ? 
+# 
+_pdbx_nonpoly_scheme.asym_id         E 
+_pdbx_nonpoly_scheme.entity_id       5 
+_pdbx_nonpoly_scheme.mon_id          W35 
+_pdbx_nonpoly_scheme.ndb_seq_num     1 
+_pdbx_nonpoly_scheme.pdb_seq_num     290 
+_pdbx_nonpoly_scheme.auth_seq_num    1 
+_pdbx_nonpoly_scheme.pdb_mon_id      W35 
+_pdbx_nonpoly_scheme.auth_mon_id     W35 
+_pdbx_nonpoly_scheme.pdb_strand_id   1 
+_pdbx_nonpoly_scheme.pdb_ins_code    . 
+# 
+loop_
+_pdbx_validate_close_contact.id 
+_pdbx_validate_close_contact.PDB_model_num 
+_pdbx_validate_close_contact.auth_atom_id_1 
+_pdbx_validate_close_contact.auth_asym_id_1 
+_pdbx_validate_close_contact.auth_comp_id_1 
+_pdbx_validate_close_contact.auth_seq_id_1 
+_pdbx_validate_close_contact.PDB_ins_code_1 
+_pdbx_validate_close_contact.label_alt_id_1 
+_pdbx_validate_close_contact.auth_atom_id_2 
+_pdbx_validate_close_contact.auth_asym_id_2 
+_pdbx_validate_close_contact.auth_comp_id_2 
+_pdbx_validate_close_contact.auth_seq_id_2 
+_pdbx_validate_close_contact.PDB_ins_code_2 
+_pdbx_validate_close_contact.label_alt_id_2 
+_pdbx_validate_close_contact.dist 
+1 1 O   1 ILE 215 ? ? N  1 LEU 218 ? ? 2.15 
+2 1 NE2 1 GLN 136 ? ? CB 1 ALA 140 ? ? 2.17 
+# 
+loop_
+_pdbx_validate_rmsd_bond.id 
+_pdbx_validate_rmsd_bond.PDB_model_num 
+_pdbx_validate_rmsd_bond.auth_atom_id_1 
+_pdbx_validate_rmsd_bond.auth_asym_id_1 
+_pdbx_validate_rmsd_bond.auth_comp_id_1 
+_pdbx_validate_rmsd_bond.auth_seq_id_1 
+_pdbx_validate_rmsd_bond.PDB_ins_code_1 
+_pdbx_validate_rmsd_bond.label_alt_id_1 
+_pdbx_validate_rmsd_bond.auth_atom_id_2 
+_pdbx_validate_rmsd_bond.auth_asym_id_2 
+_pdbx_validate_rmsd_bond.auth_comp_id_2 
+_pdbx_validate_rmsd_bond.auth_seq_id_2 
+_pdbx_validate_rmsd_bond.PDB_ins_code_2 
+_pdbx_validate_rmsd_bond.label_alt_id_2 
+_pdbx_validate_rmsd_bond.bond_deviation 
+1  1 CD  1 LYS 30  ? ? CE  1 LYS 30  ? ? 0.157  
+2  1 CE  1 LYS 30  ? ? NZ  1 LYS 30  ? ? 0.162  
+3  1 CB  1 GLU 38  ? ? CG  1 GLU 38  ? ? -0.172 
+4  1 C   1 GLU 52  ? ? O   1 GLU 52  ? ? 0.120  
+5  1 CB  1 SER 63  ? ? OG  1 SER 63  ? ? -0.114 
+6  1 C   1 GLY 72  ? ? O   1 GLY 72  ? ? 0.105  
+7  1 CD  1 GLU 81  ? ? OE1 1 GLU 81  ? ? 0.071  
+8  1 CD  1 ARG 94  ? ? NE  1 ARG 94  ? ? 0.102  
+9  1 CB  1 GLU 95  ? ? CG  1 GLU 95  ? ? 0.192  
+10 1 CD  1 GLU 117 ? ? OE1 1 GLU 117 ? ? 0.103  
+11 1 CB  1 SER 170 ? ? OG  1 SER 170 ? ? -0.186 
+12 1 CB  1 SER 175 ? ? OG  1 SER 175 ? ? -0.118 
+13 1 N   1 SER 187 ? ? CA  1 SER 187 ? ? 0.143  
+14 1 CB  1 SER 187 ? ? OG  1 SER 187 ? ? -0.115 
+15 1 CD  1 GLU 234 ? ? OE1 1 GLU 234 ? ? 0.081  
+16 1 CD  1 ARG 282 ? ? NE  1 ARG 282 ? ? 0.125  
+17 1 N   1 LYS 283 ? ? CA  1 LYS 283 ? ? 0.153  
+18 1 CE  1 LYS 283 ? ? NZ  1 LYS 283 ? ? 0.159  
+19 1 CA  1 ASP 285 ? ? CB  1 ASP 285 ? ? 0.260  
+20 1 CA  1 SER 288 ? ? CB  1 SER 288 ? ? 0.121  
+21 1 N   2 GLY 8   ? ? CA  2 GLY 8   ? ? 0.096  
+22 1 NE  2 ARG 12  ? ? CZ  2 ARG 12  ? ? 0.083  
+23 1 CD  2 GLU 40  ? ? OE1 2 GLU 40  ? ? 0.090  
+24 1 CE  2 LYS 52  ? ? NZ  2 LYS 52  ? ? 0.198  
+25 1 CB  2 LYS 87  ? ? CG  2 LYS 87  ? ? -0.170 
+26 1 CE1 2 HIS 135 ? ? NE2 2 HIS 135 ? ? -0.073 
+27 1 CB  2 GLU 136 ? ? CG  2 GLU 136 ? ? 0.143  
+28 1 CD  2 ARG 152 ? ? NE  2 ARG 152 ? ? 0.122  
+29 1 CZ  2 ARG 152 ? ? NH2 2 ARG 152 ? ? 0.092  
+30 1 CA  2 ASN 194 ? ? CB  2 ASN 194 ? ? 0.181  
+31 1 CA  2 SER 219 ? ? CB  2 SER 219 ? ? -0.115 
+32 1 CB  2 CYS 248 ? ? SG  2 CYS 248 ? ? -0.141 
+33 1 CB  2 SER 256 ? ? OG  2 SER 256 ? ? 0.133  
+34 1 C   2 SER 256 ? ? O   2 SER 256 ? ? 0.127  
+35 1 N   3 GLY 1   ? ? CA  3 GLY 1   ? ? 0.118  
+36 1 CA  3 SER 21  ? ? CB  3 SER 21  ? ? 0.131  
+37 1 CA  3 ASP 50  ? ? CB  3 ASP 50  ? ? -0.134 
+38 1 CA  3 ASN 57  ? ? CB  3 ASN 57  ? ? 0.219  
+39 1 CE  3 LYS 61  ? ? NZ  3 LYS 61  ? ? 0.168  
+40 1 CD  3 GLU 63  ? ? OE1 3 GLU 63  ? ? 0.085  
+41 1 CA  3 SER 108 ? ? CB  3 SER 108 ? ? -0.090 
+42 1 CB  3 SER 108 ? ? OG  3 SER 108 ? ? 0.097  
+43 1 N   3 GLY 138 ? ? CA  3 GLY 138 ? ? 0.095  
+44 1 C   3 THR 164 ? ? O   3 THR 164 ? ? 0.131  
+45 1 CB  3 SER 194 ? ? OG  3 SER 194 ? ? -0.081 
+46 1 CD  4 LYS 33  ? ? CE  4 LYS 33  ? ? 0.152  
+47 1 CE  4 LYS 33  ? ? NZ  4 LYS 33  ? ? 0.185  
+48 1 CB  4 SER 40  ? ? OG  4 SER 40  ? ? 0.140  
+49 1 C   4 ALA 41  ? ? O   4 ALA 41  ? ? 0.178  
+50 1 N   4 GLY 42  ? ? CA  4 GLY 42  ? ? 0.175  
+51 1 CB  4 SER 44  ? ? OG  4 SER 44  ? ? 0.129  
+52 1 CB  4 SER 46  ? ? OG  4 SER 46  ? ? 0.090  
+53 1 CE  4 LYS 51  ? ? NZ  4 LYS 51  ? ? 0.169  
+# 
+loop_
+_pdbx_validate_rmsd_angle.id 
+_pdbx_validate_rmsd_angle.PDB_model_num 
+_pdbx_validate_rmsd_angle.auth_atom_id_1 
+_pdbx_validate_rmsd_angle.auth_asym_id_1 
+_pdbx_validate_rmsd_angle.auth_comp_id_1 
+_pdbx_validate_rmsd_angle.auth_seq_id_1 
+_pdbx_validate_rmsd_angle.PDB_ins_code_1 
+_pdbx_validate_rmsd_angle.label_alt_id_1 
+_pdbx_validate_rmsd_angle.auth_atom_id_2 
+_pdbx_validate_rmsd_angle.auth_asym_id_2 
+_pdbx_validate_rmsd_angle.auth_comp_id_2 
+_pdbx_validate_rmsd_angle.auth_seq_id_2 
+_pdbx_validate_rmsd_angle.PDB_ins_code_2 
+_pdbx_validate_rmsd_angle.label_alt_id_2 
+_pdbx_validate_rmsd_angle.auth_atom_id_3 
+_pdbx_validate_rmsd_angle.auth_asym_id_3 
+_pdbx_validate_rmsd_angle.auth_comp_id_3 
+_pdbx_validate_rmsd_angle.auth_seq_id_3 
+_pdbx_validate_rmsd_angle.PDB_ins_code_3 
+_pdbx_validate_rmsd_angle.label_alt_id_3 
+_pdbx_validate_rmsd_angle.angle_deviation 
+1   1 N   1 SER 22  ? ? CA 1 SER 22  ? ? CB  1 SER 22  ? ? -9.7  
+2   1 CA  1 LYS 26  ? ? CB 1 LYS 26  ? ? CG  1 LYS 26  ? ? 15.1  
+3   1 CB  1 THR 28  ? ? CA 1 THR 28  ? ? C   1 THR 28  ? ? -18.7 
+4   1 CA  1 GLU 38  ? ? CB 1 GLU 38  ? ? CG  1 GLU 38  ? ? 19.6  
+5   1 CB  1 GLU 38  ? ? CG 1 GLU 38  ? ? CD  1 GLU 38  ? ? 21.5  
+6   1 CA  1 THR 42  ? ? CB 1 THR 42  ? ? CG2 1 THR 42  ? ? 9.7   
+7   1 CA  1 THR 53  ? ? CB 1 THR 53  ? ? OG1 1 THR 53  ? ? -13.7 
+8   1 CD  1 ARG 54  ? ? NE 1 ARG 54  ? ? CZ  1 ARG 54  ? ? -13.1 
+9   1 CB  1 SER 63  ? ? CA 1 SER 63  ? ? C   1 SER 63  ? ? -15.9 
+10  1 CB  1 ASP 66  ? ? CG 1 ASP 66  ? ? OD2 1 ASP 66  ? ? -8.3  
+11  1 CG  1 GLU 68  ? ? CD 1 GLU 68  ? ? OE1 1 GLU 68  ? ? -13.1 
+12  1 CG  1 GLU 68  ? ? CD 1 GLU 68  ? ? OE2 1 GLU 68  ? ? 14.0  
+13  1 CB  1 ASP 86  ? ? CG 1 ASP 86  ? ? OD1 1 ASP 86  ? ? 5.4   
+14  1 CD  1 ARG 94  ? ? NE 1 ARG 94  ? ? CZ  1 ARG 94  ? ? -16.9 
+15  1 NH1 1 ARG 94  ? ? CZ 1 ARG 94  ? ? NH2 1 ARG 94  ? ? 7.2   
+16  1 NE  1 ARG 94  ? ? CZ 1 ARG 94  ? ? NH2 1 ARG 94  ? ? -8.3  
+17  1 CB  1 GLU 95  ? ? CG 1 GLU 95  ? ? CD  1 GLU 95  ? ? -17.0 
+18  1 OE1 1 GLU 95  ? ? CD 1 GLU 95  ? ? OE2 1 GLU 95  ? ? 9.6   
+19  1 CD  1 LYS 97  ? ? CE 1 LYS 97  ? ? NZ  1 LYS 97  ? ? -14.0 
+20  1 CB  1 VAL 110 ? ? CA 1 VAL 110 ? ? C   1 VAL 110 ? ? -12.2 
+21  1 NE  1 ARG 113 ? ? CZ 1 ARG 113 ? ? NH2 1 ARG 113 ? ? 3.4   
+22  1 CG  1 GLU 117 ? ? CD 1 GLU 117 ? ? OE1 1 GLU 117 ? ? -12.2 
+23  1 CG  1 GLU 117 ? ? CD 1 GLU 117 ? ? OE2 1 GLU 117 ? ? 14.5  
+24  1 CA  1 LEU 118 ? ? CB 1 LEU 118 ? ? CG  1 LEU 118 ? ? 13.9  
+25  1 CB  1 TYR 121 ? ? CG 1 TYR 121 ? ? CD1 1 TYR 121 ? ? -4.6  
+26  1 N   1 VAL 122 ? ? CA 1 VAL 122 ? ? CB  1 VAL 122 ? ? -13.6 
+27  1 CD  1 ARG 123 ? ? NE 1 ARG 123 ? ? CZ  1 ARG 123 ? ? 11.7  
+28  1 NE  1 ARG 123 ? ? CZ 1 ARG 123 ? ? NH1 1 ARG 123 ? ? 9.6   
+29  1 NE  1 ARG 123 ? ? CZ 1 ARG 123 ? ? NH2 1 ARG 123 ? ? -3.7  
+30  1 CB  1 ASP 125 ? ? CG 1 ASP 125 ? ? OD1 1 ASP 125 ? ? -6.2  
+31  1 CG  1 MET 151 ? ? SD 1 MET 151 ? ? CE  1 MET 151 ? ? 9.9   
+32  1 CA  1 ALA 150 ? ? C  1 ALA 150 ? ? N   1 MET 151 ? ? -17.4 
+33  1 O   1 ALA 150 ? ? C  1 ALA 150 ? ? N   1 MET 151 ? ? 16.3  
+34  1 C   1 ALA 150 ? ? N  1 MET 151 ? ? CA  1 MET 151 ? ? -26.9 
+35  1 CB  1 ASP 165 ? ? CA 1 ASP 165 ? ? C   1 ASP 165 ? ? -16.7 
+36  1 CB  1 ASP 165 ? ? CG 1 ASP 165 ? ? OD1 1 ASP 165 ? ? -7.7  
+37  1 CB  1 ASP 165 ? ? CG 1 ASP 165 ? ? OD2 1 ASP 165 ? ? 11.8  
+38  1 C   1 ASP 164 ? ? N  1 ASP 165 ? ? CA  1 ASP 165 ? ? 15.1  
+39  1 CB  1 TYR 166 ? ? CA 1 TYR 166 ? ? C   1 TYR 166 ? ? 13.2  
+40  1 CA  1 SER 170 ? ? CB 1 SER 170 ? ? OG  1 SER 170 ? ? 30.0  
+41  1 N   1 ASN 173 ? ? CA 1 ASN 173 ? ? CB  1 ASN 173 ? ? -13.5 
+42  1 CB  1 SER 175 ? ? CA 1 SER 175 ? ? C   1 SER 175 ? ? 16.0  
+43  1 CB  1 VAL 176 ? ? CA 1 VAL 176 ? ? C   1 VAL 176 ? ? -12.3 
+44  1 CB  1 ASP 182 ? ? CG 1 ASP 182 ? ? OD1 1 ASP 182 ? ? -6.7  
+45  1 NH1 1 ARG 185 ? ? CZ 1 ARG 185 ? ? NH2 1 ARG 185 ? ? -7.8  
+46  1 NE  1 ARG 185 ? ? CZ 1 ARG 185 ? ? NH1 1 ARG 185 ? ? 6.2   
+47  1 CB  1 SER 187 ? ? CA 1 SER 187 ? ? C   1 SER 187 ? ? 19.1  
+48  1 N   1 SER 187 ? ? CA 1 SER 187 ? ? CB  1 SER 187 ? ? -12.3 
+49  1 CB  1 TYR 197 ? ? CA 1 TYR 197 ? ? C   1 TYR 197 ? ? 14.5  
+50  1 N   1 TYR 197 ? ? CA 1 TYR 197 ? ? CB  1 TYR 197 ? ? -23.3 
+51  1 CA  1 TYR 197 ? ? CB 1 TYR 197 ? ? CG  1 TYR 197 ? ? 20.4  
+52  1 CG  1 MET 221 ? ? SD 1 MET 221 ? ? CE  1 MET 221 ? ? 9.7   
+53  1 CG  1 MET 224 ? ? SD 1 MET 224 ? ? CE  1 MET 224 ? ? 9.9   
+54  1 NE  1 ARG 242 ? ? CZ 1 ARG 242 ? ? NH2 1 ARG 242 ? ? -4.7  
+55  1 CD  1 ARG 246 ? ? NE 1 ARG 246 ? ? CZ  1 ARG 246 ? ? 14.0  
+56  1 NE  1 ARG 246 ? ? CZ 1 ARG 246 ? ? NH1 1 ARG 246 ? ? 11.2  
+57  1 NE  1 ARG 246 ? ? CZ 1 ARG 246 ? ? NH2 1 ARG 246 ? ? -5.0  
+58  1 CA  1 GLU 251 ? ? CB 1 GLU 251 ? ? CG  1 GLU 251 ? ? 18.0  
+59  1 NE  1 ARG 256 ? ? CZ 1 ARG 256 ? ? NH1 1 ARG 256 ? ? -8.4  
+60  1 NE  1 ARG 256 ? ? CZ 1 ARG 256 ? ? NH2 1 ARG 256 ? ? 10.2  
+61  1 CA  1 ARG 259 ? ? CB 1 ARG 259 ? ? CG  1 ARG 259 ? ? -16.2 
+62  1 N   1 SER 265 ? ? CA 1 SER 265 ? ? CB  1 SER 265 ? ? -9.9  
+63  1 CD  1 ARG 268 ? ? NE 1 ARG 268 ? ? CZ  1 ARG 268 ? ? -11.8 
+64  1 CB  1 TYR 271 ? ? CG 1 TYR 271 ? ? CD1 1 TYR 271 ? ? 3.7   
+65  1 O   1 ASN 274 ? ? C  1 ASN 274 ? ? N   1 THR 275 ? ? 10.3  
+66  1 OE1 1 GLU 276 ? ? CD 1 GLU 276 ? ? OE2 1 GLU 276 ? ? 7.9   
+67  1 N   1 PRO 277 ? ? CD 1 PRO 277 ? ? CG  1 PRO 277 ? ? -11.3 
+68  1 CD  1 ARG 282 ? ? NE 1 ARG 282 ? ? CZ  1 ARG 282 ? ? -14.1 
+69  1 NH1 1 ARG 282 ? ? CZ 1 ARG 282 ? ? NH2 1 ARG 282 ? ? 8.0   
+70  1 NE  1 ARG 282 ? ? CZ 1 ARG 282 ? ? NH2 1 ARG 282 ? ? -7.1  
+71  1 CB  1 ASP 285 ? ? CA 1 ASP 285 ? ? C   1 ASP 285 ? ? -16.6 
+72  1 N   1 ASP 285 ? ? CA 1 ASP 285 ? ? CB  1 ASP 285 ? ? -15.3 
+73  1 CA  1 ASP 285 ? ? CB 1 ASP 285 ? ? CG  1 ASP 285 ? ? -23.0 
+74  1 CB  1 ASP 285 ? ? CG 1 ASP 285 ? ? OD1 1 ASP 285 ? ? -15.9 
+75  1 CB  1 ASP 285 ? ? CG 1 ASP 285 ? ? OD2 1 ASP 285 ? ? 9.5   
+76  1 CB  1 SER 288 ? ? CA 1 SER 288 ? ? C   1 SER 288 ? ? -12.4 
+77  1 N   1 SER 288 ? ? CA 1 SER 288 ? ? CB  1 SER 288 ? ? -9.7  
+78  1 CA  2 ASP 11  ? ? CB 2 ASP 11  ? ? CG  2 ASP 11  ? ? -19.8 
+79  1 OD1 2 ASP 11  ? ? CG 2 ASP 11  ? ? OD2 2 ASP 11  ? ? 15.2  
+80  1 CB  2 ASP 11  ? ? CG 2 ASP 11  ? ? OD1 2 ASP 11  ? ? -10.6 
+81  1 C   2 ASP 11  ? ? N  2 ARG 12  ? ? CA  2 ARG 12  ? ? 18.9  
+82  1 N   2 TRP 38  ? ? CA 2 TRP 38  ? ? CB  2 TRP 38  ? ? -11.3 
+83  1 CA  2 ASP 67  ? ? CB 2 ASP 67  ? ? CG  2 ASP 67  ? ? -13.2 
+84  1 CA  2 LYS 69  ? ? CB 2 LYS 69  ? ? CG  2 LYS 69  ? ? 13.5  
+85  1 CA  2 LYS 87  ? ? CB 2 LYS 87  ? ? CG  2 LYS 87  ? ? 38.8  
+86  1 CB  2 LYS 87  ? ? CG 2 LYS 87  ? ? CD  2 LYS 87  ? ? 17.1  
+87  1 CB  2 ASP 88  ? ? CG 2 ASP 88  ? ? OD1 2 ASP 88  ? ? -8.7  
+88  1 CB  2 PHE 97  ? ? CG 2 PHE 97  ? ? CD1 2 PHE 97  ? ? -4.4  
+89  1 CA  2 ARG 103 ? ? CB 2 ARG 103 ? ? CG  2 ARG 103 ? ? 13.2  
+90  1 CD  2 ARG 103 ? ? NE 2 ARG 103 ? ? CZ  2 ARG 103 ? ? -9.3  
+91  1 N   2 SER 119 ? ? CA 2 SER 119 ? ? CB  2 SER 119 ? ? 9.1   
+92  1 CB  2 GLU 136 ? ? CG 2 GLU 136 ? ? CD  2 GLU 136 ? ? -16.6 
+93  1 CG  2 GLU 136 ? ? CD 2 GLU 136 ? ? OE1 2 GLU 136 ? ? -13.6 
+94  1 CB  2 PHE 146 ? ? CG 2 PHE 146 ? ? CD1 2 PHE 146 ? ? -4.6  
+95  1 CA  2 GLU 151 ? ? CB 2 GLU 151 ? ? CG  2 GLU 151 ? ? 22.9  
+96  1 NE  2 ARG 152 ? ? CZ 2 ARG 152 ? ? NH1 2 ARG 152 ? ? 4.1   
+97  1 NE  2 ARG 152 ? ? CZ 2 ARG 152 ? ? NH2 2 ARG 152 ? ? -5.5  
+98  1 CB  2 ASP 155 ? ? CG 2 ASP 155 ? ? OD1 2 ASP 155 ? ? -6.9  
+99  1 N   2 ASP 168 ? ? CA 2 ASP 168 ? ? CB  2 ASP 168 ? ? -12.7 
+100 1 OD1 2 ASP 168 ? ? CG 2 ASP 168 ? ? OD2 2 ASP 168 ? ? 12.2  
+101 1 CB  2 ASP 168 ? ? CG 2 ASP 168 ? ? OD1 2 ASP 168 ? ? -11.5 
+102 1 CA  2 LEU 170 ? ? CB 2 LEU 170 ? ? CG  2 LEU 170 ? ? 17.3  
+103 1 CB  2 GLN 187 ? ? CA 2 GLN 187 ? ? C   2 GLN 187 ? ? 15.0  
+104 1 CA  2 GLN 187 ? ? CB 2 GLN 187 ? ? CG  2 GLN 187 ? ? 16.7  
+105 1 CA  2 ASN 190 ? ? CB 2 ASN 190 ? ? CG  2 ASN 190 ? ? 15.6  
+106 1 N   2 ASN 194 ? ? CA 2 ASN 194 ? ? CB  2 ASN 194 ? ? -20.8 
+107 1 CA  2 ASN 194 ? ? CB 2 ASN 194 ? ? CG  2 ASN 194 ? ? -15.7 
+108 1 C   2 THR 193 ? ? N  2 ASN 194 ? ? CA  2 ASN 194 ? ? 28.5  
+109 1 CB  2 TYR 203 ? ? CG 2 TYR 203 ? ? CD2 2 TYR 203 ? ? 3.9   
+110 1 CB  2 TYR 203 ? ? CG 2 TYR 203 ? ? CD1 2 TYR 203 ? ? -3.7  
+111 1 NE  2 ARG 214 ? ? CZ 2 ARG 214 ? ? NH1 2 ARG 214 ? ? 3.7   
+112 1 CB  2 SER 219 ? ? CA 2 SER 219 ? ? C   2 SER 219 ? ? 11.6  
+113 1 CA  2 SER 219 ? ? CB 2 SER 219 ? ? OG  2 SER 219 ? ? 21.1  
+114 1 CA  2 THR 235 ? ? CB 2 THR 235 ? ? CG2 2 THR 235 ? ? -8.5  
+115 1 CA  2 GLU 250 ? ? CB 2 GLU 250 ? ? CG  2 GLU 250 ? ? 18.3  
+116 1 CA  2 ARG 255 ? ? CB 2 ARG 255 ? ? CG  2 ARG 255 ? ? 17.7  
+117 1 NE  2 ARG 255 ? ? CZ 2 ARG 255 ? ? NH1 2 ARG 255 ? ? 7.0   
+118 1 NE  2 ARG 255 ? ? CZ 2 ARG 255 ? ? NH2 2 ARG 255 ? ? -9.3  
+119 1 CA  2 SER 256 ? ? C  2 SER 256 ? ? O   2 SER 256 ? ? -14.7 
+120 1 N   3 THR 16  ? ? CA 3 THR 16  ? ? CB  3 THR 16  ? ? -12.0 
+121 1 CA  3 ARG 19  ? ? CB 3 ARG 19  ? ? CG  3 ARG 19  ? ? 13.7  
+122 1 NE  3 ARG 19  ? ? CZ 3 ARG 19  ? ? NH2 3 ARG 19  ? ? 5.4   
+123 1 CB  3 SER 21  ? ? CA 3 SER 21  ? ? C   3 SER 21  ? ? -14.6 
+124 1 CB  3 ASN 27  ? ? CA 3 ASN 27  ? ? C   3 ASN 27  ? ? -13.1 
+125 1 CA  3 ASN 27  ? ? CB 3 ASN 27  ? ? CG  3 ASN 27  ? ? -13.7 
+126 1 CB  3 TYR 28  ? ? CG 3 TYR 28  ? ? CD1 3 TYR 28  ? ? -4.2  
+127 1 CB  3 GLU 29  ? ? CG 3 GLU 29  ? ? CD  3 GLU 29  ? ? 17.3  
+128 1 NE  3 ARG 33  ? ? CZ 3 ARG 33  ? ? NH2 3 ARG 33  ? ? -5.3  
+129 1 CG  3 GLU 45  ? ? CD 3 GLU 45  ? ? OE2 3 GLU 45  ? ? 13.2  
+130 1 CA  3 ASP 50  ? ? CB 3 ASP 50  ? ? CG  3 ASP 50  ? ? 26.9  
+131 1 CB  3 ASP 50  ? ? CG 3 ASP 50  ? ? OD1 3 ASP 50  ? ? 9.4   
+132 1 CA  3 MET 55  ? ? CB 3 MET 55  ? ? CG  3 MET 55  ? ? -10.9 
+133 1 CB  3 ASN 57  ? ? CA 3 ASN 57  ? ? C   3 ASN 57  ? ? -18.1 
+134 1 N   3 ASN 57  ? ? CA 3 ASN 57  ? ? CB  3 ASN 57  ? ? -17.7 
+135 1 CA  3 ASN 57  ? ? CB 3 ASN 57  ? ? CG  3 ASN 57  ? ? -14.6 
+136 1 CG  3 GLU 63  ? ? CD 3 GLU 63  ? ? OE1 3 GLU 63  ? ? -12.5 
+137 1 CA  3 ASN 65  ? ? CB 3 ASN 65  ? ? CG  3 ASN 65  ? ? -13.9 
+138 1 CB  3 SER 66  ? ? CA 3 SER 66  ? ? C   3 SER 66  ? ? 11.5  
+139 1 CA  3 ASN 74  ? ? CB 3 ASN 74  ? ? CG  3 ASN 74  ? ? -14.3 
+140 1 OE1 3 GLU 78  ? ? CD 3 GLU 78  ? ? OE2 3 GLU 78  ? ? 9.1   
+141 1 NE  3 ARG 112 ? ? CZ 3 ARG 112 ? ? NH1 3 ARG 112 ? ? 3.6   
+142 1 NE  3 ARG 112 ? ? CZ 3 ARG 112 ? ? NH2 3 ARG 112 ? ? -4.4  
+143 1 CB  3 ALA 121 ? ? CA 3 ALA 121 ? ? C   3 ALA 121 ? ? -10.5 
+144 1 CD  3 ARG 137 ? ? NE 3 ARG 137 ? ? CZ  3 ARG 137 ? ? -9.8  
+145 1 NE  3 ARG 137 ? ? CZ 3 ARG 137 ? ? NH1 3 ARG 137 ? ? -8.5  
+146 1 NE  3 ARG 137 ? ? CZ 3 ARG 137 ? ? NH2 3 ARG 137 ? ? 4.4   
+147 1 CA  3 ARG 142 ? ? CB 3 ARG 142 ? ? CG  3 ARG 142 ? ? 15.9  
+148 1 CG  3 MET 146 ? ? SD 3 MET 146 ? ? CE  3 MET 146 ? ? 15.7  
+149 1 CA  3 MET 163 ? ? CB 3 MET 163 ? ? CG  3 MET 163 ? ? -11.4 
+150 1 CB  3 GLN 172 ? ? CG 3 GLN 172 ? ? CD  3 GLN 172 ? ? 21.4  
+151 1 CD  3 ARG 174 ? ? NE 3 ARG 174 ? ? CZ  3 ARG 174 ? ? -11.0 
+152 1 NH1 3 ARG 174 ? ? CZ 3 ARG 174 ? ? NH2 3 ARG 174 ? ? 7.7   
+153 1 NE  3 ARG 174 ? ? CZ 3 ARG 174 ? ? NH2 3 ARG 174 ? ? -5.7  
+154 1 CB  3 TYR 181 ? ? CG 3 TYR 181 ? ? CD2 3 TYR 181 ? ? -4.8  
+155 1 CA  3 THR 182 ? ? CB 3 THR 182 ? ? CG2 3 THR 182 ? ? 12.0  
+156 1 N   3 SER 183 ? ? CA 3 SER 183 ? ? CB  3 SER 183 ? ? -9.7  
+157 1 N   3 SER 194 ? ? CA 3 SER 194 ? ? CB  3 SER 194 ? ? -10.1 
+158 1 N   3 ASP 216 ? ? CA 3 ASP 216 ? ? CB  3 ASP 216 ? ? -12.0 
+159 1 CB  3 ASP 216 ? ? CG 3 ASP 216 ? ? OD1 3 ASP 216 ? ? -8.8  
+160 1 CB  3 ASP 216 ? ? CG 3 ASP 216 ? ? OD2 3 ASP 216 ? ? 14.5  
+161 1 C   3 PRO 215 ? ? N  3 ASP 216 ? ? CA  3 ASP 216 ? ? 27.5  
+162 1 CA  3 LEU 219 ? ? CB 3 LEU 219 ? ? CG  3 LEU 219 ? ? 13.9  
+163 1 CG  3 MET 222 ? ? SD 3 MET 222 ? ? CE  3 MET 222 ? ? -9.8  
+164 1 CB  3 ASP 224 ? ? CG 3 ASP 224 ? ? OD1 3 ASP 224 ? ? -7.3  
+165 1 CA  3 GLU 236 ? ? CB 3 GLU 236 ? ? CG  3 GLU 236 ? ? 16.4  
+166 1 CB  4 SER 37  ? ? CA 4 SER 37  ? ? C   4 SER 37  ? ? 12.8  
+167 1 CA  4 ALA 41  ? ? C  4 ALA 41  ? ? O   4 ALA 41  ? ? -14.6 
+168 1 CA  4 ALA 41  ? ? C  4 ALA 41  ? ? N   4 GLY 42  ? ? 21.8  
+169 1 CB  4 LEU 45  ? ? CA 4 LEU 45  ? ? C   4 LEU 45  ? ? 12.3  
+170 1 N   4 LEU 45  ? ? CA 4 LEU 45  ? ? CB  4 LEU 45  ? ? -16.3 
+171 1 CA  4 SER 44  ? ? C  4 SER 44  ? ? N   4 LEU 45  ? ? -13.8 
+172 1 CA  4 MET 47  ? ? CB 4 MET 47  ? ? CG  4 MET 47  ? ? -13.3 
+173 1 OD1 4 ASP 48  ? ? CG 4 ASP 48  ? ? OD2 4 ASP 48  ? ? 15.2  
+174 1 CB  4 ASP 48  ? ? CG 4 ASP 48  ? ? OD1 4 ASP 48  ? ? -9.8  
+# 
+loop_
+_pdbx_validate_torsion.id 
+_pdbx_validate_torsion.PDB_model_num 
+_pdbx_validate_torsion.auth_comp_id 
+_pdbx_validate_torsion.auth_asym_id 
+_pdbx_validate_torsion.auth_seq_id 
+_pdbx_validate_torsion.PDB_ins_code 
+_pdbx_validate_torsion.phi 
+_pdbx_validate_torsion.psi 
+1  1 HIS 1 78  ? -171.79 134.95  
+2  1 PHE 1 99  ? 177.35  155.89  
+3  1 ASN 1 105 ? 178.82  158.80  
+4  1 SER 1 139 ? -11.47  125.27  
+5  1 ASN 1 141 ? -104.94 -125.43 
+6  1 PRO 1 158 ? -58.51  105.82  
+7  1 ASP 1 165 ? -46.12  168.78  
+8  1 ALA 1 194 ? -93.95  -155.64 
+9  1 GLN 1 212 ? -49.39  153.02  
+10 1 THR 1 216 ? -33.52  -32.60  
+11 1 SER 1 219 ? -98.98  52.38   
+12 1 HIS 1 249 ? 70.85   52.34   
+13 1 ILE 1 254 ? 56.66   89.13   
+14 1 ASN 1 274 ? 42.79   78.12   
+15 1 ASP 1 285 ? -59.39  171.39  
+16 1 GLU 2 27  ? -148.90 54.23   
+17 1 ASN 2 30  ? 58.12   -157.54 
+18 1 SER 2 48  ? -131.63 -60.11  
+19 1 ASP 2 57  ? 58.05   -126.64 
+20 1 ALA 2 114 ? -146.04 -134.65 
+21 1 LEU 2 170 ? -57.37  -8.67   
+22 1 ASN 2 174 ? -156.12 16.38   
+23 1 PRO 2 227 ? -48.90  150.30  
+24 1 PRO 2 236 ? -79.61  42.44   
+25 1 ARG 2 255 ? -173.02 -134.16 
+26 1 LYS 2 257 ? 104.04  100.77  
+27 1 LEU 3 25  ? -106.36 75.28   
+28 1 ILE 3 47  ? -68.20  0.48    
+29 1 ASN 3 56  ? -81.20  34.91   
+30 1 ASN 3 57  ? -31.08  -7.13   
+31 1 ASN 3 74  ? 48.07   23.08   
+32 1 ASN 3 77  ? 38.70   -14.30  
+33 1 LEU 3 85  ? -112.41 61.07   
+34 1 THR 3 193 ? -124.72 -82.98  
+35 1 SER 3 194 ? 173.32  158.46  
+36 1 LEU 3 221 ? 62.22   82.54   
+37 1 SER 4 46  ? -96.89  -74.54  
+38 1 MET 4 47  ? 60.42   94.63   
+39 1 GLU 4 54  ? -143.67 58.65   
+40 1 PRO 4 55  ? -82.48  38.49   
+# 
+loop_
+_pdbx_validate_chiral.id 
+_pdbx_validate_chiral.PDB_model_num 
+_pdbx_validate_chiral.auth_comp_id 
+_pdbx_validate_chiral.auth_asym_id 
+_pdbx_validate_chiral.auth_seq_id 
+_pdbx_validate_chiral.PDB_ins_code 
+_pdbx_validate_chiral.details 
+_pdbx_validate_chiral.omega 
+1 1 VAL 1 122 ? 'Expecting L Found L OUTSIDE RANGE' 47.188 
+2 1 SER 1 187 ? 'Expecting L Found L OUTSIDE RANGE' 47.142 
+3 1 TYR 1 197 ? 'Expecting L Found L OUTSIDE RANGE' 52.782 
+4 1 LYS 1 283 ? 'Expecting L Found L OUTSIDE RANGE' 45.575 
+5 1 LEU 4 45  ? 'Expecting L Found L OUTSIDE RANGE' 48.606 
+# 
+loop_
+_pdbx_validate_planes.id 
+_pdbx_validate_planes.PDB_model_num 
+_pdbx_validate_planes.auth_comp_id 
+_pdbx_validate_planes.auth_asym_id 
+_pdbx_validate_planes.auth_seq_id 
+_pdbx_validate_planes.PDB_ins_code 
+_pdbx_validate_planes.rmsd 
+_pdbx_validate_planes.type 
+1 1 ARG 1 259 ? 0.115 'SIDE CHAIN' 
+2 1 ARG 1 268 ? 0.121 'SIDE CHAIN' 
+3 1 ARG 2 12  ? 0.105 'SIDE CHAIN' 
+4 1 ARG 2 255 ? 0.097 'SIDE CHAIN' 
+# 
+_pdbx_entity_nonpoly.entity_id   5 
+_pdbx_entity_nonpoly.name        '5-(5-(4-(4,5-DIHYDRO-2-OXAZOLY)PHENOXY)PENTYL)-3-METHYL ISOXAZOLE' 
+_pdbx_entity_nonpoly.comp_id     W35 
+# 
