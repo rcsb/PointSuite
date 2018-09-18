@@ -1,0 +1,114 @@
+2 input files: NON-CRYSTAL or SIMPLE CRYSTAL STRUCTURE ASSUMED
+ 
+
+
+Program findframe
+
+Matrices will be read from 2nd input file
+
+Coordinates input is a cif file
+
+parsing (_pdbx_struct_oper_list.)  ntot=504 : Row=36 : data_item=14 : loop=1
+
+parsing (_cell.)  ntot=9 : Row=1 : data_item=9 : loop=0
+
+parsing (_symmetry.)  ntot=5 : Row=1 : data_item=5 : loop=0
+
+parsing (_atom_site.)  ntot=70100 : Row=2804 : data_item=25 : loop=1
+316 CA and/or P coordinates read
+
+coordinate center of mass: 0.457291 -25.586813 4.377864
+
+34 matrices read
+
+ one identity matrix read in 
+dihedral symmetry:  D 17
+17-fold will be aligned to the z-axis
+2-fold closest to reference atom will be placed on the x-axis
+
+FINDFRAME MAT START
+rot:     0.00000000    0.00000000    1.00000000 trans:             55.95620
+rot:    -0.99982958   -0.01846133    0.00000000 trans:              0.00000
+rot:     0.01846133   -0.99982958    0.00000000 trans:              0.00000
+
+rmsd (Angstrom) before fit   0.000034  after fit    0.000019
+
+FINDFRAME MAT FINAL
+rot:     0.00000000    0.00000000    1.00000000 trans:             55.95620
+rot:    -0.99982956   -0.01846189    0.00000000 trans:              0.00000
+rot:     0.01846189   -0.99982956    0.00000000 trans:              0.00000
+
+
+ writing assembly cif records to *findframe.cif*
+
+
+PROGRAM makeassembly
+
+
+parsing (_symmetry.)  ntot=5 : Row=1 : data_item=5 : loop=0
+
+parsing (_entry.)  ntot=1 : Row=1 : data_item=1 : loop=0
+
+parsing (_cell.)  ntot=9 : Row=1 : data_item=9 : loop=0
+pdb id: 1EI7
+a:      220.845000
+b:      171.701000
+c:      226.175000
+alpha:  90.000000
+beta:   90.000000
+gamma:  90.000000
+s.g.:   'P 21 21 2'
+
+parsing (_struct_asym.)  ntot=15 : Row=3 : data_item=5 : loop=1
+number of chains read: 3
+chain asym id: A   entity id:  1
+chain asym id: B   entity id:  1
+chain asym id: C   entity id:  2
+location of space group data: /Users/cathylawson/Programs/pointsuite-next/data/space_group.cif
+number of symops read for s.g. 'P 21 21 2':    4
+
+parsing (_pdbx_point_symmetry.)  ntot=3 : Row=1 : data_item=3 : loop=0
+cif table (_pdbx_helical_symmetry.) not found.
+ symmetry info (from  makextrans.cif): D 17
+
+parsing (_pdbx_struct_oper_list.)  ntot=15 : Row=1 : data_item=15 : loop=1
+ transform to point or helical frame matrix: 
+        0.00000000  0.00000000  1.00000000       55.9562000
+       -0.99982956 -0.01846189  0.00000000        0.0000000
+        0.01846189 -0.99982956  0.00000000        0.0000000
+        0.00000000  0.00000000  0.00000000        1.0000000
+
+parsing (_exptl.)  ntot=3 : Row=1 : data_item=3 : loop=0
+_exptl.method read from file 1EI7.cif is: X-RAY DIFFRACTION
+0 transform to crystal frame matrices (from makextrans.cif)
+method is X-RAY DIFFRACTION and no pdb2xtal matrices provided, so assuming X0 = identity
+
+
+ writing assembly cif records to *assembly.cif*
+ writing assembly BIOMT records to *assembly.biomt*
+  number of assembly matrices: 34
+
+
+  1 independent particle(s) in crystal unit cell
+ writing ncs cif records to *assembly.ncs*
+*************************************************
+ PARTICLE  1 
+ deposited frame to crystal frame transformation:
+ 1  1.000000  0.000000  0.000000        0.00000
+ 1  0.000000  1.000000  0.000000        0.00000
+ 1  0.000000  0.000000  1.000000        0.00000
+ crystal symops contributing to point symmetry:
+   1  2  of   4 crystal symops total
+ point operations corresponding to ncs ops:
+   1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+  16 17
+  17 of  34 point ops 
+closing assembly.cif
+ 
+removing assembly cif categories if present
+ 
+no loop detected for _pdbx_point_symmetry\.
+no _pdbx_helical_symmetry\. category present
+loop detected for _pdbx_struct_assembly\.
+loop detected for _pdbx_struct_assembly_gen\.
+loop detected for _pdbx_struct_oper_list\.

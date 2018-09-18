@@ -1,0 +1,101 @@
+2 input files: NON-CRYSTAL or SIMPLE CRYSTAL STRUCTURE ASSUMED
+ 
+
+
+Program findframe
+
+Matrices will be read from 2nd input file
+
+Coordinates input is a cif file
+cif table (_pdbx_struct_oper_list.) not found.
+Note:The infor. from_pdbx_struct_oper_list is not parsed to pdb
+
+parsing (_cell.)  ntot=9 : Row=1 : data_item=9 : loop=0
+
+parsing (_symmetry.)  ntot=5 : Row=1 : data_item=5 : loop=0
+
+parsing (_atom_site.)  ntot=9250 : Row=370 : data_item=25 : loop=1
+50 CA and/or P coordinates read
+
+coordinate center of mass: 5.359000 -19.023960 34.410000
+
+55 matrices read
+
+ one identity matrix read in 
+Helical Structure Assumed
+
+ Basis Matrix: 
+   0.836477  -0.548001   0.000000   0.000000
+   0.548001   0.836477   0.000000   0.000000
+   0.000000   0.000000   1.000000 -16.000000
+
+rotation   :    -33.230  degrees
+translation:     16.000  Angstroms
+dyad symm  :      1
+z    symm  :      5
+
+helical symmetry info written to output file *findframe.cif*
+
+
+WARNING: NO FRAME TRANSFORMATION MATRIX CALCULATED
+
+
+PROGRAM makeassembly
+
+
+parsing (_symmetry.)  ntot=5 : Row=1 : data_item=5 : loop=0
+
+parsing (_entry.)  ntot=1 : Row=1 : data_item=1 : loop=0
+
+parsing (_cell.)  ntot=9 : Row=1 : data_item=9 : loop=0
+pdb id: 1IFD
+a:      1.000000
+b:      1.000000
+c:      1.000000
+alpha:  90.000000
+beta:   90.000000
+gamma:  90.000000
+s.g.:   'P 1'
+
+parsing (_struct_asym.)  ntot=5 : Row=1 : data_item=5 : loop=0
+number of chains read: 1
+chain asym id: A   entity id:  1
+location of space group data: /Users/cathylawson/Programs/pointsuite-next/data/space_group.cif
+number of symops read for s.g. 'P 1':    1
+cif table (_pdbx_point_symmetry.) not found.
+
+parsing (_pdbx_helical_symmetry.)  ntot=7 : Row=1 : data_item=7 : loop=0
+
+55 Matrices requested for a left-handed helix
+   55 matrices will be written
+   26 =identity matrix index
+      -33.230 degree rotation per subunit around z
+       16.000 Angstrom rise per subunit along z
+   1-fold about the x axis
+   5-fold about the z axis
+cif table (_pdbx_struct_oper_list.) not found.
+ transform to point or helical frame matrix: 
+        1.00000000  0.00000000  0.00000000        0.0000000
+        0.00000000  1.00000000  0.00000000        0.0000000
+        0.00000000  0.00000000  1.00000000        0.0000000
+        0.00000000  0.00000000  0.00000000        1.0000000
+
+parsing (_exptl.)  ntot=3 : Row=1 : data_item=3 : loop=0
+_exptl.method read from file 1IFD.cif is: FIBER DIFFRACTION
+0 transform to crystal frame matrices (from makextrans.cif)
+
+
+ writing assembly cif records to *assembly.cif*
+ writing assembly BIOMT records to *assembly.biomt*
+  number of assembly matrices: 55
+
+
+closing assembly.cif
+ 
+removing assembly cif categories if present
+ 
+no _pdbx_point_symmetry\. category present
+no _pdbx_helical_symmetry\. category present
+no _pdbx_struct_assembly\. category present
+no _pdbx_struct_assembly_gen\. category present
+no _pdbx_struct_oper_list\. category present
