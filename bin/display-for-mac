@@ -1,0 +1,5 @@
+#/bin/csh -f
+#change the name of this executable to "display" if you want to
+#use Mac OS X Preview instead of imagemagic to display images generated
+#using Chimera scripts
+open -a Preview $1
