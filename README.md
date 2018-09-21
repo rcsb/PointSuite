@@ -11,14 +11,6 @@ Lawson CL, Dutta SD, Westbrook JD, Henrick K, Berman HM (2008)   [Representation
 Download the latest version here: https://github.com/rcsb/pointsuite/releases
 You will also need UCSF Chimera installed and in your path
 
-### Prerequisites
-
-TODO
-
-```
-examples
-```
-
 ### Installing
 Copy the package in the directory where you want to install the software and type the following commands:
 ```
@@ -63,14 +55,7 @@ DEMO LIST:
 Additional icosahedral virus examples: 2XD8 (EM), 2W0C, 2VF9, 3N7X (X-ray). 
 See also the Virus processing tutorial (in the html folder) for more info.
 
-## Contributing
 
-Please email author about updating.
-
-## Authors
+## Authors/Contributors
 
 Written/compiled by C. Lawson, with thanks to V.J. Reddy (TSRI) for sharing PDB2VIPER code (findframe);  Tom Goddard (UCSF) for Chimera scripts (runchimera.csh); Huanwang Yang (RCSB PDB) for importmats and cif-handling subroutines.
-
-## License
-
-This project is licensed under ...
