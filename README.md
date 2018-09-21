@@ -15,10 +15,10 @@ You will also need UCSF Chimera installed and in your path
 Copy the package in the directory where you want to install the software and type the following commands:
 ```
 tar xvzf pointsuite0.7.tgz
-cd pointsuite0.7
 ```
 To compile:
 ```
+cd pointsuite0.7
 make
 ```
 The package is composed of programs written in C along with C-shell-based scripts. It has been extensively tested on linux and mac-intel osx operating systems.
