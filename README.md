@@ -2,7 +2,7 @@
 
 PointSuite is a set of programs to process macromolecular assemblies described by point and helical symmetry operations, with the goals of uniform annotation, archiving, and viewing.  In order to handle coordinates deposited in any orthogonal Cartesian frame, the relationships between the deposition, standard point and crystal frames are captured as frame transformations.  For example, the transformation required to move icosahedral virus structures from deposited position to the standard frame shown at left is calculated and recorded.  All point symmetries are fully handled; helical entries are handled only for non-crystal cases.
 
-Lawson CL, Dutta SD, Westbrook JD, Henrick K, Berman HM (2008)   [Representation of viruses in the remediated PDB archive](http://journals.iucr.org/d/issues/2008/08/00/mv5020/index.html), Acta Cryst D, 874-882.Software package for handling matrices of biological assemblies containing point or helical symmetries.
+Reference: Lawson CL, Dutta SD, Westbrook JD, Henrick K, Berman HM (2008)   [Representation of viruses in the remediated PDB archive](http://journals.iucr.org/d/issues/2008/08/00/mv5020/index.html), Acta Cryst D, 874-882.Software package for handling matrices of biological assemblies containing point or helical symmetries.
 
 (For now, publicly served at https://iqb.rutgers.edu/pointsuite/)
 
@@ -46,14 +46,14 @@ rundemo.csh all
 ```
 
 DEMO LIST: 
-*1RUG: Generate archival cif for icosahedral virus crystal structure.⋅⋅
-*1IFD:   Generate archival cif for helical virus fiber diffraction structure.⋅⋅
-*1EI7:   Generate archival cif for D17 symmetry particle.⋅⋅
-*1CGM:  Generate matrix representation for ~900 A length helical TMV-like virus.⋅⋅
-*1M4X:  Generate matrix representations for complex virus particle sub-assemblies.⋅⋅
-*IMPORT:  Generate BIOMT, CIF from typical author-uploaded example input files using importmats.⋅⋅
-*Additional icosahedral virus examples: 2XD8 (EM), 2W0C, 2VF9, 3N7X (X-ray). ⋅⋅
-See also the Virus processing tutorial (in the html folder) for more info.
+-1RUG: Generate archival cif for icosahedral virus crystal structure.  
+-1IFD:   Generate archival cif for helical virus fiber diffraction structure.  
+-1EI7:   Generate archival cif for D17 symmetry particle.  
+-1CGM:  Generate matrix representation for ~900 A length helical TMV-like virus.  
+-1M4X:  Generate matrix representations for complex virus particle sub-assemblies.  
+-IMPORT:  Generate BIOMT, CIF from typical author-uploaded example input files using importmats.  
+-Additional icosahedral virus examples: 2XD8 (EM), 2W0C, 2VF9, 3N7X (X-ray).  
+See also the Virus processing tutorial (in the html folder) for more info
 
 
 ## Authors/Contributors
