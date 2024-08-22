@@ -1,4 +1,4 @@
-2024-August-22 please note we are in the process of updating documentation for this repository in the "docs" folder.
+2024-August-22 please note we are in the process of updating documentation for this repository in the "docs" folder, and making this repo the location for package download.
 
 # Pointsuite
 
