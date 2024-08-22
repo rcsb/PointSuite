@@ -21,13 +21,13 @@ rundemo.csh all
 
   
 browse the demos to view functionality  
-  1RUG: Generate archival cif for icosahedral virus crystal structure.  
-  1IFD:   Generate archival cif for helical virus fiber diffraction structure.  
-  1EI7:   Generate archival cif for D17 symmetry particle.  
-  1CGM:  Generate matrix representation for ~900 A length helical TMV-like virus.  
-  1M4X:  Generate matrix representations for complex virus particle sub-assemblies.  
-  IMPORT:  Generate BIOMT, CIF from typical author-uploaded example input files using importmats.  
-Additional icosahedral virus examples: 2XD8 (EM), 2W0C, 2VF9, 3N7X (X-ray).   
+* 1RUG: Generate archival cif for icosahedral virus crystal structure.  
+* 1IFD:   Generate archival cif for helical virus fiber diffraction structure.  
+* 1EI7:   Generate archival cif for D17 symmetry particle.   
+* 1CGM:  Generate matrix representation for ~900 A length helical TMV-like virus.  
+* 1M4X:  Generate matrix representations for complex virus particle sub-assemblies.  
+* IMPORT:  Generate BIOMT, CIF from typical author-uploaded example input files using importmats.  
+* Additional icosahedral virus demos: 2XD8 (EM), 2W0C, 2VF9, 3N7X (X-ray).   
     
 - - -
 
