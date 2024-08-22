@@ -1,24 +1,15 @@
 
 # PointSuite v.0.7  
 
-|     |     |
-| --- | --- |
-| ![labelled icosahedron](icos_label.jpg) | PointSuite is a set of programs to process macromolecular assemblies described by point and helical symmetry operations, with the goals of uniform annotation, archiving, and viewing.  In order to handle coordinates deposited in any orthogonal Cartesian frame, the relationships between the deposition, standard point and crystal frames are captured as frame transformations.  For example, the transformation required to move icosahedral virus structures from deposited position to the standard frame shown at left is calculated and recorded.  All point symmetries are fully handled; helical entries are handled only for non-crystal cases.  <br>  <br>Written/compiled by C. Lawson, with thanks to V.J. Reddy (TSRI) for sharing PDB2VIPER code (findframe);  Tom Goddard (UCSF) for Chimera scripts (runchimera.csh); Huanwang Yang (RCSB PDB) for importmats and cif-handling subroutines.  <br>  <br>Please look at this open access article that describes how Pointsuite was used to remediate virus structures in the PDB: Lawson CL, Dutta SD, Westbrook JD, Henrick K, Berman HM (2008)   [Representation of viruses in the remediated PDB archive](http://journals.iucr.org/d/issues/2008/08/00/mv5020/index.html), Acta Cryst D, 874-882. |
-| DOWNLOAD:  [pointsuite0.7.tgz](http://chem.rutgers.edu/%7Elawson/pointsuite0.7.tgz) (version date: January 15, 2013) |
-| [Virus Processing Tutorial  <br>](virusproc-tutorial.html) |
-| [Installation Instructions](#install)     [Documentation](#Documentation) |
+
+![labelled icosahedron](icos_label.jpg) PointSuite is a set of programs to process macromolecular assemblies described by point and helical symmetry operations, with the goals of uniform annotation, archiving, and viewing.  In order to handle coordinates deposited in any orthogonal Cartesian frame, the relationships between the deposition, standard point and crystal frames are captured as frame transformations.  For example, the transformation required to move icosahedral virus structures from deposited position to the standard frame shown at left is calculated and recorded.  All point symmetries are fully handled; helical entries are handled only for non-crystal cases.  <br>  <br>Written/compiled by C. Lawson, with thanks to V.J. Reddy (TSRI) for sharing PDB2VIPER code (findframe);  Tom Goddard (UCSF) for Chimera scripts (runchimera.csh); Huanwang Yang (RCSB PDB) for importmats and cif-handling subroutines.  <br>  <br>Please look at this open access article that describes how Pointsuite was used to remediate virus structures in the PDB: Lawson CL, Dutta SD, Westbrook JD, Henrick K, Berman HM (2008)   [Representation of viruses in the remediated PDB archive](http://journals.iucr.org/d/issues/2008/08/00/mv5020/index.html), Acta Cryst D, 874-882. 
+
+ [Virus Processing Tutorial](virusproc-tutorial.md)
 
 INSTALL/COMPILE/CONFIGURE:  
-Type the following commands in the directory where you want to install the software.  
-
-**tar xvzf pointsuite0.7.tgz****cd pointsuite0.7****make** (to compile)  
-The package is composed of programs written in C along with C-shell-based scripts.  
-It has been extensively tested on linux and mac-intel osx operating systems.  
+View instructions at the [PointSuite GitHub Repository](https://github.com/rcsb/PointSuite) 
   
-**source setup.csh**    
-setup.csh script works for csh/tcsh shell. follow directions to set up your environment more permanently.  
-  
-To make full use of the package, the graphics program [UCSF Chimera](http://www.cgl.ucsf.edu/chimera/) should also be installed and in your path.  
+To make full use of the package, the graphics program [UCSF Chimera](http://www.cgl.ucsf.edu/chimera/) should be installed and in your path.  
   
 TEST:  
 **cd demo****rundemo.csh 1RUG**  (runs the 1RUG demo)  
