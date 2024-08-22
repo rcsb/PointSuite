@@ -62,3 +62,23 @@ See also the Virus processing tutorial (in the html folder) for more info
 ## Authors/Contributors
 
 Written/compiled by C. Lawson, with thanks to V.J. Reddy (TSRI) for sharing PDB2VIPER code (findframe);  Tom Goddard (UCSF) for Chimera scripts (runchimera.csh); Huanwang Yang (RCSB PDB) for importmats and cif-handling subroutines.
+
+## Versions
+
+version 0.5.8 (12 June 2007) initial stable release  
+  
+version 0.6 (20 June 2011) minor updates:  
+\*importmats (from H. Yang)  handles additional matrix type (xncsrel) from CNS ncs.def.  
+\*update of scripts automating image generation to work with v.1.4 Chimera and higher  
+\*when run without arguments, runpt.csh autoscript now prints brief documentation  
+\*new virus processing tutorial  
+\*additional documentation now provided for utilities: importmats, autoscripts, multiplymats  
+\*RCSBvirusimages.csh script to generate set of virus images for web display.  
+  
+version 0.7 (15 January 2013):  
+\*improved cif parsing subroutines added by H. Yang (cifparse.c).  
+\*file input reading improvements in importmats, findframe, makeassembly  
+\*findframe single input file with matrices and coordinates can now be either PDB or CIF; optional 2nd file in BIOMT format (overrides 1st file matrices)  
+\*new program cif2pdb creates simple pdb file (matrices, cryst1 record, coordinates) from cif (H. Yang).  
+\*simplified scripts, PDB-dependency removed for runpt.csh  
+\*RCSBvirusimages.csh script handles split entry cases (modifications by Ezra Peisach)  
