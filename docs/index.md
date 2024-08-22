@@ -23,7 +23,8 @@ rundemo.csh all
 browse the demos to view functionality  
   1RUG: Generate archival cif for icosahedral virus crystal structure.  
   1IFD:   Generate archival cif for helical virus fiber diffraction structure.  
-  1EI7:   Generate archival cif for D17 symmetry particle.  1CGM:  Generate matrix representation for ~900 A length helical TMV-like virus.  
+  1EI7:   Generate archival cif for D17 symmetry particle.  
+  1CGM:  Generate matrix representation for ~900 A length helical TMV-like virus.  
   1M4X:  Generate matrix representations for complex virus particle sub-assemblies.  
   IMPORT:  Generate BIOMT, CIF from typical author-uploaded example input files using importmats.  
 Additional icosahedral virus examples: 2XD8 (EM), 2W0C, 2VF9, 3N7X (X-ray).   
@@ -40,10 +41,10 @@ PROGRAM DOCUMENTATION:
     *   [autoscripts](#autoscripts)          
     *   [frac2orth](#frac2orth)
     *   [movecoords](#movecoords)
-    *   [multiplymats](#multplymats)
+    *   [multiplymats](#multiplymats)
 
-  
-*    [Virus Processing Tutorial](virusproc-tutorial.md)
+
+[Virus Processing Tutorial](virusproc-tutorial.md)
         
 - - -
 
@@ -59,9 +60,9 @@ FINDFRAME is an extension of the [PDB2VIPER](http://viperdb.scripps.edu/pdb2vipe
 ### Use
 
 on the command line:  
-  
-\>findframe infile.pdb/cif
-
+``` 
+findframe infile.pdb (or infile.cif)
+```
 The input file is expected to have all needed transformation matrices to build the icosahedral or other point group particle AND coordinates for the asymmetric unit .  PDB matrices can be given either as REMARK 350 BIOMT or MTRIX records; in cif the matrices are given in \_pdbx\_struct\_oper\_list and must have type of "general operation", "point symmetry operation" or "helical symmetry operation".  One of the transformation matrices must be the identity element. Optional: a second file can be provided with BIOMT records; in this case the matrices in the 2nd file override any present in the first file.  
   
 
@@ -100,9 +101,9 @@ Generates sets of transformations corresponding to point or helical symmetry pro
 ### Use
 
 Commonly used after findframe, e.g.:  
-  
+```  
 pointmats findframe.cif  
-  
+```  
 will generate point or helical matrix set with standard order in the same frame as the matrices analysed by findframe.  
 
   
@@ -122,9 +123,9 @@ The set of point symmetry operations corresponding to a crystal asymmetric unit 
 ### Use
 
 Crystal frame transformations are optional (e.g., for EM structures):  
-
-\>makeassembly uc\_symtry\_scale\_.cif symm\_transforms.cif  
-
+```
+makeassembly uc_symtry_scale_.cif symm_transforms.cif  
+```
 ### Algorithm  
 
 1.  For each independent particle position n defined by Xn, the full standard set of matrices for the point symmetry given in 2ptmat , \*\*to be applied to coordinates transformed by X0\*\*,  are calculated as \[Xn\]\[2ptmat^-1\]\[StdMats\]\[2ptmat\]\[X0^-1\].
@@ -143,9 +144,10 @@ General info about the calculation for each independent particle is provided in 
 
 ### importmats:  
 
-call with  
-\>importmats matfile  
-  
+call with
+```
+importmats matfile  
+```  
 Reads in and automatically detects a wide variety of  matrix record formats including BIOMT, MTRIX, ncs.def.  
 Outputs file with BIOMT records named "importmats.biomt" and file with CIF \_pdbx\_struct\_assembly\_oper records named "importmats.cif"  
 Use importmats to prepare author.biomt file for runpt.csh  
@@ -168,18 +170,20 @@ RCSBvirusimages-split.csh  file1.pdb file2.pdb file3.pdb ... (combined images f
 
 ### frac2orth:  
 
-call with  
-\>frac2orth  
-  
+call with 
+```
+frac2orth  
+```  
 Interactively requests 6 parameters of unit cell and a position in fractional coordinates, outputs orthogonalization matrix, fractionalization matrix, and corresponding Cartesian coordinates of input position.  Useful if the translation part of a skew matrix is provided in fractional coordinates.  
 
 - - -
 
 ### movecoords: 
 
-call with  
-\>movecoords file1.pdb file2.matrix  
-  
+call with
+```
+movecoords file1.pdb file2.matrix  
+```  
 reads in pdb file and 4x4 matrix file, writes out "new.pdb" file that is identical to input file except with x,y,z coordinates tranformed by the 4x4 matrix.  
 
 - - -
@@ -192,9 +196,10 @@ examples:
 "(1-2)(3,5,7-9)"  creates the set of matrices 1\*3, 1\*5, 1\*7, 1\*8, 1\*9, 2\*3, 2\*5, 2\*7, 2\*8, 2\*9  
 "(1)(2,(2)(2),(2)(2)(2))" creates the set of matrices 1\*2, 1\*2\*2, 1\*2\*2\*2  
 
-call with  
-\>multiplymats <pointmats or assembly cif> <matrix multiplication string in double quotes>  
-
+call with
+```
+multiplymats <pointmats or assembly cif> <matrix multiplication string in double quotes>  
+```
 example (1m4x):  
 multiplymats 1m4x.cif "(1-60)(61-88)"  
 number of matrices read: 89  
