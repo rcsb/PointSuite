@@ -87,11 +87,11 @@ UCSF Chimera-created images: author matrices (left) vs PointSuite matrices (righ
 <img height="200" src="../demo/2VF9/build_auth.cif.jpg"><img height="200" src="../demo/2VF9/build_pointsuite.cif.jpg">
 
 ```
-runpt.csh 2VF9.cif 2VF9.biomt ident 2VF9.x1.mat
+runpt.csh 2VF9.cif 2VF9.biomt1 ident 2VF9.x1.mat
 runchimera.csh 
 ```
 
-input files: <a href="../demo/2VF9/2VF9.cif" target="_blank">2VF9.cif</a> <a href="../demo/2VF9/2VF9.biomt" target="_blank">2VF9.biomt</a> <a href="../demo/2VF9/2VF9.x1.mat" target="_blank">2VF9.x1.mat</a>
+input files: <a href="../demo/2VF9/2VF9.cif" target="_blank">2VF9.cif</a> <a href="../demo/2VF9/2VF9.biomt1" target="_blank">2VF9.biomt1</a> <a href="../demo/2VF9/2VF9.x1.mat" target="_blank">2VF9.x1.mat</a>
 
 The "ident" keyword indicates that the transformation for one particle position in the crystal au is the identity matrix.  The 2nd transformation is non-identity and so is input via 2VF9.x1.mat file.
 
