@@ -93,6 +93,8 @@ runchimera.csh
 
 input files: <a href="../demo/2VF9/2VF9.cif" target="_blank">2VF9.cif</a> <a href="../demo/2VF9/2VF9.biomt" target="_blank">2VF9.biomt</a> <a href="../demo/2VF9/2VF9.x1.mat" target="_blank">2VF9.x1.mat</a>
 
+The "ident" keyword indicates that the transformation for one particle position in the crystal au is the identity matrix.  The 2nd transformation is non-identity and so is input via 2VF9.x1.mat file.
+
 output files: <a href="../demo/2VF9/runpt.log" target="_blank">runpt.log</a> <a href="../demo/2VF9/assembly.cif" target="_blank">assembly.cif</a>
 
 - - -
