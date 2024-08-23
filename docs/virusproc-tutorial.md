@@ -98,7 +98,7 @@ output files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/
 - - -
 
 
-### [3N7X X-ray 1/2 particle/crystal au, coordinates NOT in crystal frame](https://www.rcsb.org/structure/3N7X]
+### [3N7X X-ray 1/2 particle/crystal au, coordinates NOT in crystal frame](https://www.rcsb.org/structure/3N7X)
 (note: example uses version 1 of this entry, in 2023 it was reversioned with coordinates moved to crystal frame)
 
 UCSF Chimera-created images: author matrices (left) vs PointSuite matrices (right)
