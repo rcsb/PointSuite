@@ -86,7 +86,7 @@ UCSF Chimera-created images: author matrices (left) vs PointSuite matrices (righ
 <img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/build_auth.cif.jpg"><img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/build_pointsuite.cif.jpg">
 
 ```
-runpt.csh 2VF9.cif 2VF9.biomt ident x1.mat
+runpt.csh 2VF9.cif 2VF9.biomt ident 2VF9.x1.mat
 runchimera.csh 
 ```
 
