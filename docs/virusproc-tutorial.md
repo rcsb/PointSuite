@@ -90,7 +90,7 @@ runpt.csh 2VF9.cif 2VF9.biomt ident x1.mat
 runchimera.csh 
 ```
 
-input files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/2VF9.cif" target="_blank">2VF9.cif</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/2VF9.biomt" target="_blank">2VF9.biomt</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/x1.mat" target="_blank">2VF9.x1.mat</a>
+input files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/2VF9.cif" target="_blank">2VF9.cif</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/2VF9.biomt" target="_blank">2VF9.biomt</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/2VF9.x1.mat" target="_blank">2VF9.x1.mat</a>
 
 output files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/runpt.log" target="_blank">runpt.log</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/assembly.cif" target="_blank">assembly.cif</a>
 
