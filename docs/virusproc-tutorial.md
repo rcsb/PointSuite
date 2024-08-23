@@ -52,31 +52,31 @@ On successful run command line will state "successful completion of script:  ch
 
 UCSF Chimera-created images: author matrices (left) vs PointSuite matrices (right)
 
-<img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/2XD8/build_auth.cif.jpg"> <img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/2XD8/build_pointsuite.cif.jpg">
+<img height="200" src="../demo/2XD8/build_auth.cif.jpg"> <img height="200" src="../demo/2XD8/build_pointsuite.cif.jpg">
 
 ```
 runpt.csh 2XD8.cif 2XD8.biomt
 runchimera.csh 
 ```
-input files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2XD8/2XD8.cif" target="_blank">2XD8.cif</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2XD8/2XD8.biomt" target="_blank">2XD8.biomt</a>
+input files: <a href="../demo/2XD8/2XD8.cif" target="_blank">2XD8.cif</a> <a href="../demo/2XD8/2XD8.biomt" target="_blank">2XD8.biomt</a>
 
-output files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2XD8/runpt.log" target="_blank">runpt.log</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2XD8/assembly.cif" target="_blank">assembly.cif</a>
+output files: <a href="../demo/2XD8/runpt.log" target="_blank">runpt.log</a> <a href="../demo/2XD8/assembly.cif" target="_blank">assembly.cif</a>
 
 - - -
 
 ### [2W0C X-ray 1 particle/crystal au, coordinates in crystal frame](https://www.rcsb.org/structure/2W0C)
 UCSF Chimera-created images: author matrices (left) vs PointSuite matrices (right)
 
-<img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/2W0C/build_auth.cif.jpg"> <img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/2W0C/build_pointsuite.cif.jpg">
+<img height="200" src="../demo/2W0C/build_auth.cif.jpg"> <img height="200" src="../demo/2W0C/build_pointsuite.cif.jpg">
 
 ```
 runpt.csh 2W0C.cif 2W0C.biomt
 runchimera.csh 
 ```
 
-input files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2W0C/2W0C.cif" target="_blank">2W0C.cif</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2W0C/2W0C.biomt" target="_blank">2W0C.biomt</a>
+input files: <a href="../demo/2W0C/2W0C.cif" target="_blank">2W0C.cif</a> <a href="../demo/2W0C/2W0C.biomt" target="_blank">2W0C.biomt</a>
 
-output files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2W0C/runpt.log" target="_blank">runpt.log</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2W0C/assembly.cif" target="_blank">assembly.cif</a>
+output files: <a href="../demo/2W0C/runpt.log" target="_blank">runpt.log</a> <a href="../demo/2W0C/assembly.cif" target="_blank">assembly.cif</a>
 
 - - -
 
@@ -84,16 +84,16 @@ output files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2W0C/
 ### [2VF9 X-ray 2 particles/crystal au, coordinates in crystal frame](https://www.rcsb.org/structure/2VF9)
 UCSF Chimera-created images: author matrices (left) vs PointSuite matrices (right)
 
-<img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/build_auth.cif.jpg"><img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/build_pointsuite.cif.jpg">
+<img height="200" src="../demo/2VF9/build_auth.cif.jpg"><img height="200" src="../demo/2VF9/build_pointsuite.cif.jpg">
 
 ```
 runpt.csh 2VF9.cif 2VF9.biomt ident 2VF9.x1.mat
 runchimera.csh 
 ```
 
-input files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/2VF9.cif" target="_blank">2VF9.cif</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/2VF9.biomt" target="_blank">2VF9.biomt</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/2VF9.x1.mat" target="_blank">2VF9.x1.mat</a>
+input files: <a href="../demo/2VF9/2VF9.cif" target="_blank">2VF9.cif</a> <a href="../demo/2VF9/2VF9.biomt" target="_blank">2VF9.biomt</a> <a href="../demo/2VF9/2VF9.x1.mat" target="_blank">2VF9.x1.mat</a>
 
-output files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/runpt.log" target="_blank">runpt.log</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/assembly.cif" target="_blank">assembly.cif</a>
+output files: <a href=../demo/2VF9/runpt.log" target="_blank">runpt.log</a> <a href="../demo/2VF9/assembly.cif" target="_blank">assembly.cif</a>
 
 - - -
 
@@ -103,16 +103,16 @@ output files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/
 
 UCSF Chimera-created images: author matrices (left) vs PointSuite matrices (right)
 
-<img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/3N7X/build_auth.cif.jpg"><img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/3N7X/build_pointsuite.cif.jpg">
+<img height="200" src="../demo/3N7X/build_auth.cif.jpg"><img height="200" src="../demo/3N7X/build_pointsuite.cif.jpg">
 
 ```
 runpt.csh 3N7X.cif 3N7X.biomt x0.mat
 runchimera.csh 
 ```
 
-input files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/3N7X/3N7X.cif" target="_blank">3N7X.cif</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2XD8/2XD8.biomt" target="_blank">3N7X.biomt</a>
+input files: <a href="../demo/3N7X/3N7X.cif" target="_blank">3N7X.cif</a> <a href="../demo/2XD8/2XD8.biomt" target="_blank">3N7X.biomt</a>
 
-output files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/3N7X/runpt.log" target="_blank">runpt.log</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/3N7X/assembly.cif" target="_blank">assembly.cif</a>
+output files: <a href="../demo/3N7X/runpt.log" target="_blank">runpt.log</a> <a href="../demo/3N7X/assembly.cif" target="_blank">assembly.cif</a>
 
 - - -
 
