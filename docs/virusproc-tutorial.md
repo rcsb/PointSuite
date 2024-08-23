@@ -4,9 +4,9 @@
 
 ## TWO STEPS:   
 
-1.  [USE runpt.csh SCRIPT TO CREATE BIOLOGICAL ASSEMBLY CIF](#runpt)  
+1.  USE runpt.csh SCRIPT TO CREATE BIOLOGICAL ASSEMBLY CIF
     
-2.  [USE runchimera.csh TO CHECK RESULT](#runchimera)  
+2.  USE runchimera.csh TO CHECK RESULT
     
 
 - - -
@@ -17,9 +17,9 @@ CREATE BIOMT/ASSEMBLY.CIF USING runpt.csh
 
 Input files (and what is read from them):  
   
-* <cif> :  chain id list, crystal symmetry/unit cell info, coordinates  
-* <author matrix file> : author-provided matrix file in any format that can be read by importmats. The file must define ONE particle only, and must include one identity matrix. If needed can manually convert author-provided format file using "importmats <filename>"  
-* <ident or matfile> : List of transformations required to place deposited coordinates into all particle positions in crystal ident tag signifies coordinates already in crystal frame (shorthand for identity matrix) matfile contains elements for one non-identity matrix: [example](../demo/3N7X/3N7X.x0.mat).  #  ident  + matfiles = # of particles positioned in the crystal asymmetric unit. If coordinates are deposited in NONCRYSTAL frame, at least one matrix is needed.  
+* \<cif\> :  chain id list, crystal symmetry/unit cell info, coordinates  
+* \<author matrix file\> : author-provided matrix file in any format that can be read by importmats. The file must define ONE particle only, and must include one identity matrix. If needed can manually convert author-provided format file using "importmats <filename>"  
+* \<ident or matfile\> : List of transformations required to place deposited coordinates into all particle positions in crystal ident tag signifies coordinates already in crystal frame (shorthand for identity matrix) matfile contains elements for one non-identity matrix: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/3N7X/3N7X.x0.mat" target="_blank">example</a>. The number of ident  + matfiles = number of particles positioned in the crystal asymmetric unit. If coordinates are deposited in NONCRYSTAL frame, at least one matrix is needed.  
   
   
 Command:  
@@ -47,31 +47,79 @@ On successful run command line will state "successful completion of script:  ch
   
 ## DEMO EXAMPLES
 
-### 2XD8
+### [2XD8 EM virus](https://www.rcsb.org/structure/2XD8)
 
- [![2xd8<br>image](../demo/2XD8/build_auth.pdb.jpg)](../demo/2XD8/build_auth.pdb.jpg)[![2xd8 image](../demo/2XD8/build_pointsuite.pdb.jpg)](../demo/2XD8/build_pointsuite.pdb.jpg)  (A) [2XD8](http://www.rcsb.org/pdb/explore/explore.do?structureId=2XD8) -- EM virus  runpt.csh [2xd8.cif](../demo/2XD8/2XD8.cif) [2xd8.biomt](../demo/2XD8/2XD8.biomt)  <br>runchimera.csh  [runpt.log](../demo/2XD8/runpt.log) [assembly.cif](../demo/2XD8/assembly.cif) 
+UCSF Chimera-created images: author matrices (left) vs PointSuite matrices (right)
 
-### 2W0C
+<img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/2XD8/build_auth.cif.jpg"> <img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/2XD8/build_pointsuite.cif.jpg">
 
- [![2w0c<br>image](../demo/2W0C/build_auth.pdb.jpg)](../demo/2W0C/build_auth.pdb.jpg)[![2w0c image](../demo/2W0C/build_pointsuite.pdb.jpg)](../demo/2W0C/build_pointsuite.pdb.jpg)  (B) [2W0C](http://www.rcsb.org/pdb/explore/explore.do?structureId=2W0C) -- X-ray 1 particle/crystal au  <br>coordinates in crystal frame (usually true)  runpt.csh  [2w0c.cif](../demo/2W0C/2W0C.cif) [2w0c.biomt](../demo/2W0C/2W0C.biomt)  <br>runchimera.csh  [runpt.log](../demo/2W0C/runpt.log) [assembly.cif](../demo/2W0C/assembly.cif) 
+```
+runpt.csh 2XD8.cif 2XD8.biomt
+runchimera.csh 
+```
+input files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2XD8/2XD8.cif" target="_blank">2XD8.cif</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2XD8/2XD8.biomt" target="_blank">2XD8.biomt</a>
 
-### 2VF9
+output files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2XD8/runpt.log" target="_blank">runpt.log</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2XD8/assembly.cif" target="_blank">assembly.cif</a>
 
- [![2vf9<br>image](../demo/2VF9/build_auth.pdb.jpg)](../demo/2VF9/build_auth.pdb.jpg)[![2vf9 image](../demo/2VF9/build_pointsuite.pdb.jpg)](../demo/2VF9/build_pointsuite.pdb.jpg)  (C) [2VF9](http://www.rcsb.org/pdb/explore/explore.do?structureId=2VF9) -- X-ray [2 particles/crystal au](../html/multiparticle.html)   <br>coordinates in crystal frame  runpt.csh  [2vf9.cif](../demo/2VF9/2VF9.cif) [2vf9.biomt1](../demo/2VF9/2VF9.biomt1)\* ident  [x1.mat](../demo/2VF9/2VF9.x1.mat)\*\*  <br>\*(1st 60 BIOMT matrices in current public file)  <br>\*\*(61st BIOMT matrix in current public file)  <br>runchimera.csh  [runpt.log](../demo/2VF9/runpt.log) [assembly.cif](../demo/2VF9/assembly.cif) 
+- - -
 
-### 3N7X
+### [2W0C X-ray 1 particle/crystal au, coordinates in crystal frame](https://www.rcsb.org/structure/2W0C)
+UCSF Chimera-created images: author matrices (left) vs PointSuite matrices (right)
 
- [![3n7x<br>image](../demo/3N7X/build_auth.pdb.jpg)](../demo/3N7X/build_auth.pdb.jpg)[![3n7x image](../demo/3N7X/build_pointsuite.pdb.jpg)](../demo/3N7X/build_pointsuite.pdb.jpg)  (D) [3N7X](http://www.rcsb.org/pdb/explore/explore.do?structureId=3N7X) -- X-ray 1/2 particle/crystal au  <br>coordinates in NONCRYSTAL frame  runpt.csh  [3n7x.cif](../demo/3N7X/3N7X.cif) [3n7x.biomt](../demo/3N7X/3N7X.biomt)  [x0.mat](../demo/3N7X/3N7X.x0.mat)  <br>runchimera.csh  [runpt.log](../demo/3N7X/runpt.log) [assembly.cif](../demo/3N7X/assembly.cif) 
+<img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/2W0C/build_auth.cif.jpg"> <img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/2W0C/build_pointsuite.cif.jpg">
 
-  
+```
+runpt.csh 2W0C.cif 2W0C.biomt
+runchimera.csh 
+```
+
+input files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2W0C/2W0C.cif" target="_blank">2W0C.cif</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2W0C/2W0C.biomt" target="_blank">2W0C.biomt</a>
+
+output files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2W0C/runpt.log" target="_blank">runpt.log</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2W0C/assembly.cif" target="_blank">assembly.cif</a>
+
+- - -
+
+
+### [2VF9 X-ray 2 particles/crystal au, coordinates in crystal frame](https://www.rcsb.org/structure/2VF9)
+UCSF Chimera-created images: author matrices (left) vs PointSuite matrices (right)
+
+<img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/build_auth.cif.jpg"><img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/build_pointsuite.cif.jpg">
+
+```
+runpt.csh 2VF9.cif 2VF9.biomt ident x1.mat
+runchimera.csh 
+```
+
+input files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/2VF9.cif" target="_blank">2VF9.cif</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/2VF9.biomt" target="_blank">2VF9.biomt</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/x1.mat" target="_blank">x1.mat</a>
+
+output files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/runpt.log" target="_blank">runpt.log</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2VF9/assembly.cif" target="_blank">assembly.cif</a>
+
+- - -
+
+
+### [3N7X X-ray 1/2 particle/crystal au, coordinates NOT in crystal frame](https://www.rcsb.org/structure/3N7X]
+(note: example uses version 1 of this entry, in 2023 it was reversioned with coordinates moved to crystal frame)
+
+UCSF Chimera-created images: author matrices (left) vs PointSuite matrices (right)
+
+<img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/3N7X/build_auth.cif.jpg"><img height="200" src="https://github.com/rcsb/PointSuite/blob/master/demo/3N7X/build_pointsuite.cif.jpg">
+
+```
+runpt.csh 3N7X.cif 3N7X.biomt x0.mat
+runchimera.csh 
+```
+
+input files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/3N7X/3N7X.cif" target="_blank">3N7X.cif</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/2XD8/2XD8.biomt" target="_blank">3N7X.biomt</a>
+
+output files: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/3N7X/runpt.log" target="_blank">runpt.log</a> <a href="https://github.com/rcsb/PointSuite/blob/master/demo/3N7X/assembly.cif" target="_blank">assembly.cif</a>
 
 - - -
 
   
 
-## NCS/MTRIX RECORDS
+## NCS (MTRIX) RECORDS
 
-FOR ALL X-RAY ENTRIES, NCS/MTRIX records are handled separately from above.  These matrices should be obtained from the deposited coordinate file and values placed in MTRIX ([\_struct\_ncs\_oper](http://mmcif.pdb.org/dictionaries/mmcif_pdbx.dic/Categories/struct_ncs_oper.html)) records for SF validation. Because pointsuite-generated ncs are based on exact point symmetry operations,  they can differ from author-refined values.   Currently there is no specific pointsuite module for this.   
+FOR ALL X-RAY ENTRIES, NCS (MTRIX) records are handled separately from above.  These matrices should be obtained from the deposited coordinate file and values placed in MTRIX <a href="http://mmcif.pdb.org/dictionaries/mmcif_pdbx.dic/Categories/struct_ncs_oper.html" target="_blank">_struct_ncs_oper</a> records for SF validation. Because pointsuite-generated ncs are based on exact point symmetry operations,  they can differ from author-refined values.   Currently there is no specific pointsuite module for this.   
   
   
   
