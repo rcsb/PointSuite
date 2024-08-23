@@ -2,9 +2,9 @@
 
 [PointSuite](https://github.com/rcsb/PointSuite) is a set of programs to process macromolecular assemblies described by point and helical symmetry operations, with the goals of uniform annotation, archiving, and viewing.  In order to handle coordinates deposited in any orthogonal Cartesian frame, the relationships between the deposition, standard point and crystal frames are captured as frame transformations.  For example, the transformation required to move icosahedral virus structures from deposited position to the standard frame shown at left is calculated and recorded.  All point symmetries are fully handled; helical entries are handled only for non-crystal cases. Written/compiled by C. Lawson, with thanks to V.J. Reddy (TSRI) for sharing PDB2VIPER code (findframe);  Tom Goddard (UCSF) for Chimera scripts (runchimera.csh); Huanwang Yang (RCSB PDB) for importmats and cif-handling subroutines. Please look at this open access article that describes how Pointsuite was used to remediate virus structures in the PDB: Lawson CL, Dutta SD, Westbrook JD, Henrick K, Berman HM (2008)   [Representation of viruses in the remediated PDB archive](http://journals.iucr.org/d/issues/2008/08/00/mv5020/index.html), Acta Cryst D, 874-882.
 
-To INSTALL/COMPILE/CONFIGURE, view the instructions in the [PointSuite GitHub Repository](https://github.com/rcsb/PointSuite) 
+To INSTALL/COMPILE/CONFIGURE, view the instructions [here](../README.md) 
   
-To make full use of the package, the graphics program [UCSF Chimera](http://www.cgl.ucsf.edu/chimera/) should be installed and in your path.  
+In order to check the results of PointSuite calculations, the graphics program [UCSF Chimera](http://www.cgl.ucsf.edu/chimera/) should be installed and in your path.  
   
 DEMO TESTING:  
 ```
@@ -44,7 +44,7 @@ PROGRAM DOCUMENTATION:
     *   [multiplymats](#multiplymats)
 
 
-[Virus Processing Tutorial](virusproc-tutorial.md)
+[Virus Processing Tutorial](./virusproc-tutorial.md)
         
 - - -
 
