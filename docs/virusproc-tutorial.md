@@ -44,7 +44,8 @@ On successful run command line will state "successful completion of script:  ch
 * build_auth.pdb, build_wwpdb.pdb :  file with author-provided BIOMT + coordinates and  file with final BIOMT + coordinates.  These can be inspected/compared in chimera using pointsuite "runchimera.csh" script, or manually by applying Chimera multiscale model/biomt option.  
 * assembly.ncs (X-ray only): these files have pointsuite-calculated NCS.  Useful to compare/check against author-provided NCS, but DO NOT INCLUDE IN PROCESSED ENTRY UNLESS AUTHOR NCS is determined to not be available.  SEE [BELOW](#ncs).  
   
-  
+- - -
+
 ## DEMO EXAMPLES
 
 ### [2XD8 EM virus](https://www.rcsb.org/structure/2XD8)
