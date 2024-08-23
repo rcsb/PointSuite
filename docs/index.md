@@ -176,6 +176,26 @@ frac2orth
 ```  
 Interactively requests 6 parameters of unit cell and a position in fractional coordinates, outputs orthogonalization matrix, fractionalization matrix, and corresponding Cartesian coordinates of input position.  Useful if the translation part of a skew matrix is provided in fractional coordinates.  
 
+Example Output:
+```
+frac2orth
+type in 6 unit cell params a b c alpha beta gamma (Angstroms, degrees) : 
+24.146   72.095   24.127  90.00  92.67  90.00
+type in 3 frac coords for orthogonalization 
+0.5 0.5 0.5
+unit cell: 24.146000 72.095000 24.127000 90.000000 92.670000 90.000000
+
+orthmat  :    24.146000    0.000000   -1.123918        0.000000
+orthmat  :     0.000000   72.095000    0.000000        0.000000
+orthmat  :     0.000000    0.000000   24.100808        0.000000
+
+fracmat  :     0.041415   -0.000000    0.001931       -0.000000
+fracmat  :    -0.000000    0.013871   -0.000000        0.000000
+fracmat  :     0.000000   -0.000000    0.041492       -0.000000
+
+orth coords  :    11.5110408313    36.0475000000    12.0504038996 
+```
+
 - - -
 
 ### movecoords: 
@@ -201,32 +221,33 @@ call with
 multiplymats <pointmats or assembly cif> <matrix multiplication string in double quotes>  
 ```
 example (1m4x):  
+```
 multiplymats 1m4x.cif "(1-60)(61-88)"  
 number of matrices read: 89  
 Matrix multiplication expression to be parsed: (1-60)(61-88)  
   
 result:  
   
-1\*61  
-1\*62  
-1\*63  
-1\*64  
-1\*65  
-1\*66  
-1\*67  
-1\*68  
-1\*69  
-1\*70  
-1\*71  
+1*61  
+1*62  
+1*63  
+1*64  
+1*65  
+1*66  
+1*67  
+1*68  
+1*69  
+1*70  
+1*71  
 ...
 
-60\*85  
-60\*86  
-60\*87  
-60\*88  
-Writing 1680 matrices to \*mult.cif\*  
-Writing 1680 matrices to \*mult.biomt\*  
-  
+60*85  
+60*86  
+60*87  
+60*88  
+Writing 1680 matrices to *mult.cif*  
+Writing 1680 matrices to *mult.biomt*  
+```  
 
 - - -
 
