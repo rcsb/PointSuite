@@ -15,11 +15,11 @@
 
 CREATE BIOMT/ASSEMBLY.CIF USING runpt.csh
 
-Input files (and what is read from them):  
+Input (and what is read from them):  
   
 * \<cif\> :  chain id list, crystal symmetry/unit cell info, coordinates  
-* \<author matrix file\> : author-provided matrix file in any format that can be read by importmats. The file must define ONE particle only, and must include one identity matrix. If needed can manually convert author-provided format file using "importmats <filename>"  
-* \<ident or matfile\> : List of transformations required to place deposited coordinates into all particle positions in crystal ident tag signifies coordinates already in crystal frame (shorthand for identity matrix) matfile contains elements for one non-identity matrix: <a href="https://github.com/rcsb/PointSuite/blob/master/demo/3N7X/3N7X.x0.mat" target="_blank">example</a>. The number of ident  + matfiles = number of particles positioned in the crystal asymmetric unit. If coordinates are deposited in NONCRYSTAL frame, at least one matrix is needed.  
+* \<biomt\> : author-provided matrices file. It can be formatted either as BIOMT records, or in any other format that can be read by importmats. The file must define assembly for ONE particle only, and it must include one identity matrix. If needed, can manually convert author-provided format file using "importmats <filename>"  
+* keyword "ident" or \<matfile\> : File containing a single transformation to move deposited coordinates into one particle position in crystal asymmetric unit, <a href="../demo/3N7X/3N7X.x0.mat" target="_blank">example</a>. Supply as many transformations in individual files as needed to define all of the particle positions.  If one of the transformations is the identity matrix, you can supply the keyword "ident" in place of a filename containing the identity matrix. The number of ident  + matfiles included on the command line should equal the number of particles in the crystal asymmetric unit.   
   
   
 Command:  
@@ -93,7 +93,7 @@ runchimera.csh
 
 input files: <a href="../demo/2VF9/2VF9.cif" target="_blank">2VF9.cif</a> <a href="../demo/2VF9/2VF9.biomt" target="_blank">2VF9.biomt</a> <a href="../demo/2VF9/2VF9.x1.mat" target="_blank">2VF9.x1.mat</a>
 
-output files: <a href=../demo/2VF9/runpt.log" target="_blank">runpt.log</a> <a href="../demo/2VF9/assembly.cif" target="_blank">assembly.cif</a>
+output files: <a href="../demo/2VF9/runpt.log" target="_blank">runpt.log</a> <a href="../demo/2VF9/assembly.cif" target="_blank">assembly.cif</a>
 
 - - -
 
@@ -118,7 +118,8 @@ output files: <a href="../demo/3N7X/runpt.log" target="_blank">runpt.log</a> <a 
 
   
 
-## NCS (MTRIX) RECORDS
+## NCS 
+(MTRIX) RECORDS
 
 FOR ALL X-RAY ENTRIES, NCS (MTRIX) records are handled separately from above.  These matrices should be obtained from the deposited coordinate file and values placed in MTRIX <a href="http://mmcif.pdb.org/dictionaries/mmcif_pdbx.dic/Categories/struct_ncs_oper.html" target="_blank">_struct_ncs_oper</a> records for SF validation. Because pointsuite-generated ncs are based on exact point symmetry operations,  they can differ from author-refined values.   Currently there is no specific pointsuite module for this.   
   
