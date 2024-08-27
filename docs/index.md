@@ -1,37 +1,4 @@
-<img src="icos_label.jpg" alt="drawing" align="right" width="300"/>
-
-[PointSuite](https://github.com/rcsb/PointSuite) is a set of programs to process macromolecular assemblies described by point and helical symmetry operations, with the goals of uniform annotation, archiving, and viewing.  In order to handle coordinates deposited in any orthogonal Cartesian frame, the relationships between the deposition, standard point and crystal frames are captured as frame transformations.  For example, the transformation required to move icosahedral virus structures from deposited position to the standard frame shown at left is calculated and recorded.  All point symmetries are fully handled; helical entries are handled only for non-crystal cases. Written/compiled by C. Lawson, with thanks to V.J. Reddy (TSRI) for sharing PDB2VIPER code (findframe);  Tom Goddard (UCSF) for Chimera scripts (runchimera.csh); Huanwang Yang (RCSB PDB) for importmats and cif-handling subroutines. Please look at this open access article that describes how Pointsuite was used to remediate virus structures in the PDB: Lawson CL, Dutta SD, Westbrook JD, Henrick K, Berman HM (2008)   [Representation of viruses in the remediated PDB archive](http://journals.iucr.org/d/issues/2008/08/00/mv5020/index.html), Acta Cryst D, 874-882.
-
-To INSTALL/COMPILE/CONFIGURE, view the instructions [here](../README.md) 
-  
-In order to check the results of PointSuite calculations, the graphics program [UCSF Chimera](http://www.cgl.ucsf.edu/chimera/) should be installed and in your path.  
-  
-DEMO TESTING:  
-```
-cd demo
-```
-to run the demo for 1RUG:
-```
-rundemo.csh 1RUG
-```
-to run all of the demos:
-```
-rundemo.csh all
-```
-
-  
-browse the demos to view functionality  
-* 1RUG: Generate archival cif for icosahedral virus crystal structure.  
-* 1IFD:   Generate archival cif for helical virus fiber diffraction structure.  
-* 1EI7:   Generate archival cif for D17 symmetry particle.   
-* 1CGM:  Generate matrix representation for ~900 A length helical TMV-like virus.  
-* 1M4X:  Generate matrix representations for complex virus particle sub-assemblies.  
-* IMPORT:  Generate BIOMT, CIF from typical author-uploaded example input files using importmats.  
-* Additional icosahedral virus demos: 2XD8 (EM), 2W0C, 2VF9, 3N7X (X-ray).   
-    
-- - -
-
-PROGRAM DOCUMENTATION:  
+# PointSuite Program Documentation 
 
 *   [FINDFRAME](#program-findframe)
 *   [POINTMATS](#program-pointmats)
@@ -44,7 +11,9 @@ PROGRAM DOCUMENTATION:
     *   [multiplymats](#multiplymats)
 
 
-[Virus Processing Tutorial](./virusproc-tutorial.md)
+See Also:
+* [PointSuite Installation Instructions](../README.md)
+* [Virus Processing Tutorial](./virusproc-tutorial.md)
         
 - - -
 
@@ -63,7 +32,7 @@ on the command line:
 ``` 
 findframe infile.pdb (or infile.cif)
 ```
-The input file is expected to have all needed transformation matrices to build the icosahedral or other point group particle AND coordinates for the asymmetric unit .  PDB matrices can be given either as REMARK 350 BIOMT or MTRIX records; in cif the matrices are given in \_pdbx\_struct\_oper\_list and must have type of "general operation", "point symmetry operation" or "helical symmetry operation".  One of the transformation matrices must be the identity element. Optional: a second file can be provided with BIOMT records; in this case the matrices in the 2nd file override any present in the first file.  
+The input file is expected to have all needed transformation matrices to build the icosahedral or other point group particle AND coordinates for the asymmetric unit.  PDB matrices can be given either as REMARK 350 BIOMT or MTRIX records; in cif the matrices are given in \_pdbx\_struct\_oper\_list and must have type of "general operation", "point symmetry operation" or "helical symmetry operation".  One of the transformation matrices must be the identity element. Optional: a second file can be provided with BIOMT records; in this case the matrices in the 2nd file override any present in the first file.  
   
 
 ### Algorithm
