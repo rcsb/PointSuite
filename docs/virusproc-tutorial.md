@@ -1,5 +1,9 @@
 # PROCESSING VIRUSES USING POINTSUITE  
 
+See Also:
+* [PointSuite Installation Instructions](../README.md)
+* [Individual Program Instructions](./index.md)
+
 - - -
 
 ## TWO STEPS:   
@@ -11,7 +15,7 @@
 
 - - -
 
-## RUNPT
+## RUNPT.CSH
 
 CREATE BIOMT/ASSEMBLY.CIF USING runpt.csh
 
