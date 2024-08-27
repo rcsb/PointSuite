@@ -6,4 +6,5 @@ bin/makeassembly
 bin/movecoords
 bin/multiplymats
 bin/pointmats
+chimera/*.pyc
 
