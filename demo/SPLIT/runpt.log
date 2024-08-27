@@ -1,0 +1,123 @@
+2 input files: NON-CRYSTAL or SIMPLE CRYSTAL STRUCTURE ASSUMED
+ 
+
+
+Program findframe
+
+Matrices will be read from 2nd input file
+
+Coordinates input is a cif file
+
+parsing (_pdbx_struct_oper_list.)  ntot=915 : Row=61 : data_item=15 : loop=1
+cif table (_cell.) not found.
+the item (_cell.length_a) is not found
+the item (_cell.length_b) is not found
+the item (_cell.length_c) is not found
+the item (_cell.angle_alpha) is not found
+the item (_cell.angle_beta) is not found
+the item (_cell.angle_gamma) is not found
+cif table (_symmetry.) not found.
+the item (_symmetry.space_group_name_H-M) is not found
+
+parsing (_atom_site.)  ntot=1405248 : Row=54048 : data_item=26 : loop=1
+6742 CA and/or P coordinates read
+
+coordinate center of mass: 97.285259 212.814771 164.232490
+
+60 matrices read
+
+ one identity matrix read in 
+icosahedral symmetry: I
+
+ Icosahedral asymmetric unit is 3-fold centric
+ closest 5-fold will be aligned to the vector  ( 0, 1, phi)
+ closest 3-fold will be aligned to ( phi/3, 0, (2*phi+1)/3)
+
+FINDFRAME MAT START
+rot:     0.80901699    0.30901700   -0.50000000 trans:              0.00000
+rot:    -0.50000001    0.80901699   -0.30901698 trans:              0.00000
+rot:     0.30901700    0.50000000    0.80901700 trans:              0.00000
+
+rmsd (Angstrom) before fit   0.000004  after fit    0.000002
+
+FINDFRAME MAT FINAL
+rot:     0.80901699    0.30901699   -0.50000000 trans:              0.00000
+rot:    -0.50000000    0.80901699   -0.30901699 trans:              0.00000
+rot:     0.30901699    0.50000000    0.80901699 trans:              0.00000
+
+
+ writing assembly cif records to *findframe.cif*
+
+
+PROGRAM makeassembly
+
+cif table (_symmetry.) not found.
+
+parsing (_entry.)  ntot=1 : Row=1 : data_item=1 : loop=0
+cif table (_cell.) not found.
+WARNING: problem with id, cell or s.g. in SPLIT.3n09.cif, one or more defaults will be used
+pdb id: 3N09
+a:      1.000000
+b:      1.000000
+c:      1.000000
+alpha:  90.000000
+beta:   90.000000
+gamma:  90.000000
+s.g.:   'P 1'
+
+parsing (_struct_asym.)  ntot=100 : Row=20 : data_item=5 : loop=1
+number of chains read: 20
+chain asym id: A   entity id:  1
+chain asym id: B   entity id:  1
+chain asym id: C   entity id:  2
+chain asym id: D   entity id:  2
+chain asym id: E   entity id:  2
+chain asym id: F   entity id:  2
+chain asym id: G   entity id:  2
+chain asym id: H   entity id:  2
+chain asym id: I   entity id:  2
+chain asym id: J   entity id:  2
+chain asym id: K   entity id:  2
+chain asym id: L   entity id:  2
+chain asym id: M   entity id:  2
+chain asym id: N   entity id:  2
+chain asym id: O   entity id:  2
+chain asym id: P   entity id:  3
+chain asym id: Q   entity id:  3
+chain asym id: R   entity id:  3
+chain asym id: S   entity id:  3
+chain asym id: T   entity id:  3
+location of space group data: /home/cathy/2024/pointsuite-0.7.3/data/space_group.cif
+number of symops read for s.g. 'P 1':    1
+
+parsing (_pdbx_point_symmetry.)  ntot=2 : Row=1 : data_item=2 : loop=0
+the item (_pdbx_point_symmetry.circular_symmetry) is not found
+cif table (_pdbx_helical_symmetry.) not found.
+ symmetry info (from  makextrans.cif): I
+
+parsing (_pdbx_struct_oper_list.)  ntot=15 : Row=1 : data_item=15 : loop=1
+ transform to point or helical frame matrix: 
+        0.80901699  0.30901699 -0.50000000        0.0000000
+       -0.50000000  0.80901699 -0.30901699        0.0000000
+        0.30901699  0.50000000  0.80901699        0.0000000
+        0.00000000  0.00000000  0.00000000        1.0000000
+
+parsing (_exptl.)  ntot=3 : Row=1 : data_item=3 : loop=0
+_exptl.method read from file SPLIT.3n09.cif is: ELECTRON MICROSCOPY
+0 transform to crystal frame matrices (from makextrans.cif)
+
+
+ writing assembly cif records to *assembly.cif*
+ writing assembly BIOMT records to *assembly.biomt*
+  number of assembly matrices: 60
+
+
+closing assembly.cif
+ 
+removing assembly cif categories if present
+ 
+no loop detected for _pdbx_point_symmetry\.
+no _pdbx_helical_symmetry\. category present
+loop detected for _pdbx_struct_assembly\.
+loop detected for _pdbx_struct_assembly_gen\.
+loop detected for _pdbx_struct_oper_list\.
