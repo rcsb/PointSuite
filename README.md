@@ -1,5 +1,7 @@
 # Pointsuite
 
+<img src="./docs/icos_label.jpg" alt="drawing" align="right" width="300"/>
+
 PointSuite is a set of programs to process macromolecular assemblies described by point and helical symmetry operations, with the goals of uniform annotation, archiving, and viewing.  In order to handle coordinates deposited in any orthogonal Cartesian frame, the relationships between the deposition, standard point and crystal frames are captured as frame transformations.  For example, the transformation required to move icosahedral virus structures from deposited position to the standard frame shown at left is calculated and recorded.  All point symmetries are fully handled; helical entries are handled only for non-crystal cases.
 
 Reference: Lawson CL, Dutta SD, Westbrook JD, Henrick K, Berman HM (2008)   [Representation of viruses in the remediated PDB archive](http://journals.iucr.org/d/issues/2008/08/00/mv5020/index.html), Acta Cryst D, 874-882.Software package for handling matrices of biological assemblies containing point or helical symmetries.
