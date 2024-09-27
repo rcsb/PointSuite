@@ -46,5 +46,5 @@ invertmat : $(SRC)/invertmat.c
 .PHONY: clean
 clean :
 	@cd $(BIN) ; rm -f findframe importmats multiplymats pointmats  \
-	makeassembly frac2orth movecoords cif2pdb
+	makeassembly frac2orth movecoords cif2pdb invertmat
 
