@@ -40,6 +40,9 @@ movecoords : $(SRC)/movecoords.c
 cif2pdb : $(SRC)/cif2pdb.c
 	$(CC) -g -o $(BIN)/$@  $(SRC)/cif2pdb.c -lm
 
+invertmat : $(SRC)/invertmat.c
+        $(CC) -g -o $(BIN)/$@  $(SRC)/invertmat.c -lm
+
 .PHONY: clean
 clean :
 	@cd $(BIN) ; rm -f findframe importmats multiplymats pointmats  \
